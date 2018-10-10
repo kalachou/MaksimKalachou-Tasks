@@ -1,0 +1,15 @@
+footer {
+    columns: 3;
+}
+
+nav {
+    position: fixed;
+}
+
+nav ul li {
+    display: inline;
+}
+
+p::first-letter {
+    color: #880900
+}

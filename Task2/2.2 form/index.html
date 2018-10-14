@@ -19,9 +19,13 @@
             <option>Radio Buttons</option>
         </select><br>
         <label>Choices<br>
-            <input type="radio" name="choices" value="subscribe" checked>Subscribe<br>
-            <input type="radio" name="choices" value="unsubscribe">Unsubscribe<br>
+            <div class="form__choices_wrapper">
+                <input type="radio" name="choices" value="subscribe" checked>Subscribe<span class="form__choices__disabler"></span><br>
+                <input type="radio" name="choices" value="unsubscribe">Unsubscribe<span class="form__choices__disabler"></span><br>
+            </div>
+            
         </label>
+        
         <input type="checkbox" name="wrap" id="wrapped" checked>Wrap in paragraph tags?<br>
         <input type="submit" value="Add to form">
     </form>

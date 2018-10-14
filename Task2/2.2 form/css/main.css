@@ -12,28 +12,27 @@
     font-family: "Comic sans", sans-serif;
 }
 
-.close {
-    position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
+.form__choices__disabler {
+    position: relative;
+
+    width: 12px;
+    height: 12px;
     opacity: 0.3;
     }
-    .close:hover {
+.form__choices__disabler:hover {
     opacity: 1;
     }
-    .close:before, .close:after {
+.form__choices__disabler:before, .form__choices__disabler:after {
     position: absolute;
     left: 15px;
     content: ' ';
-    height: 33px;
+    height: 12px;
     width: 2px;
     background-color: #333;
     }
-    .close:before {
+.form__choices__disabler:before {
     transform: rotate(45deg);
     }
-    .close:after {
+.form__choices__disabler:after {
     transform: rotate(-45deg);
     }

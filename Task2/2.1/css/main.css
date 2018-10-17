@@ -1,0 +1,11 @@
+.header {
+    border: 1px solid gray;
+    width: 950px;
+    height: 200px;
+}
+
+.main {
+    border: 1px solid gray;
+    width: 950px;
+    height: 80px;
+}

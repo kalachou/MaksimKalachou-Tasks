@@ -1,0 +1,50 @@
+body {
+    box-sizing: border-box;
+}
+
+.main_wrapper {
+    width: 1480px;
+    margin: 0 auto;
+}
+
+.home_aside {
+    width: 49%;
+    height: 820px;
+    background: url('../img/home-img.jpg') no-repeat -343px -30px;
+    display: inline-block;
+}
+
+.home {
+    width: 49%;
+    display: inline-block;
+}
+
+.header__navigation {
+    position: fixed;
+    right: 0;
+    text-transform: uppercase;
+}
+
+.header__navigation div {
+    display: inline-block;
+}
+
+.about__curriculum {
+    width: 49%;
+    height: 350px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.my_skills_aside {
+    width: 25%;
+    height: 350px;
+    background: url('../img/about-img.jpg') no-repeat -525px -30px;
+    display: inline-block;
+}
+
+.my_skills {
+    width: 25%;
+    height: 350px;
+    display: inline-block;
+}

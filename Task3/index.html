@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" media="(min-width: 768px) and (max-width:1920px)" />
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="main_wrapper">
-    <header class="main_header" id="home">
+    <header class="sections main_header" id="home">
         <nav class="header__navigation">
             <a href="#home"><div>home</div></a>
             <a href="#about"><div>about me</div></a>
@@ -19,11 +19,10 @@
             <a href="#testimonial"><div>testimonial</div></a>
             <a href="#contact"><div>contact</div></a>
         </nav>
-        <aside class="home_aside" alt="home-img.jpg">
+        <img class="home_aside" alt="home-img.jpg">
         </aside>
-        <article slass="home">
-        welcome to my website
-        Hello, I am Stimulus currently based in New York city. 
+        <article class="main_home">
+        <h1>welcome to my website</h1>
         Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum <br>
         in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id <br>
         accumsan quam. 
@@ -32,7 +31,7 @@
     </header>
 
     <main class="main_main">
-        <section id="about">
+        <section class="sections about" id="about">
             <article class="about__curriculum">
                 Donec auctor 
                 Sed vulpuate vitae diam quis bibendum 
@@ -41,9 +40,9 @@
                 <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, <br>
                 quis porta odio odio at velit. </p>
             </article>
-            <aside class="my_skills_aside">
+            <aside class="about__small-sections my_skills_aside">
             </aside>
-            <article class="my_skills">
+            <article class="about__small-sections my_skills">
                 My Skills
                 Photoshop . HTML CSS JS . Web Design
                 Frontend Design 90%
@@ -59,22 +58,25 @@
                     <div style="height:4px;width:80%;background-color: black;"></div>
                 </div><br>
             </article>
-            <article>
-                <i class="fa fa-laptop" aria-hidden="true"></i>
+            <article class="about__small-sections about__interface-design">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
                 Interface Design 
                 Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. 
             </article>
-            <article>
-                <i class="fa fa-telegram" aria-hidden="true"></i>
+            <article class="about__small-sections about__media-strategy">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-1x"></i>
+                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                  </span>
                 Media Strategy 
                 Curabitur at pulvinar ante. Duis dui urna, faucibus eget fens eu, iaculis congue sem. 
             </article>
-            <article>
+            <article class="about__small-sections about__mobile-app">
                     <i class="fa fa-table" aria-hidden="true"></i>
                     Mobile App 
                     Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.
             </article>
-            <article>
+            <article class="about__small-sections about__coding">
                     <i class="fa fa-html5" aria-hidden="true"></i>
                     Coding 
                     Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis. 
@@ -83,8 +85,11 @@
 
         </section>
 
-        <section id=eperiences>
-            <img src="img/experience-img.jpg" alt="experience-img.jpg">
+        <section class="sections my-experience" id="eperiences">
+            <aside class="my-experience__info-aside">
+                <img src="img/experience-img.jpg" alt="experience-img.jpg">
+            </aside>
+            <article class="my-experience__info">
             my experiences
             Previous companies and my tasks
             <ul>
@@ -97,10 +102,12 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </i>
             </ul>
+            </article>
 
         </section>
 
-        <section id="testimonial">
+        <section class="sections" id="testimonial">
+            <article class="education">
             My Education
             In cursus orci non ipsum gravida dignissim 
             <ul>
@@ -116,16 +123,18 @@
                     mus.
                 </i>
             </ul>
-            <img src="img/education-img.jpg" alt="education-img.jpg">
-            <i class="fa fa-star fa-5x" aria-hidden="true"></i>
+            </article>
+            <aside class="education__aside"><img src="img/education-img.jpg" alt="education-img.jpg"></aside>
+            <article class="proin">
+            <i class="fa fa-star fa-5x fa-inverse" aria-hidden="true"></i><br>
             Proin lobortis eu diam et facilisis. Fusce nisi nibh, <br>
             molestie in vestibulum quis, auctor et orci. 
             <p>Curabitur at pulvinar ante. Duis dui urna, faucibus egAis eu, iaculis congue sem. </p>
-
+            </article>
         </section>
 
-        <section id="contact">
-            <form action="">
+        <section class="sections contact" id="contact">
+            <form class="contact__form" action="">
                     Say hello.. 
                     Integer ut consectetur est. In cursus orci non ipsum gravida dignissim. 
                     <input type="text" placeholder="Your Name">
@@ -133,13 +142,18 @@
                     <textarea  placeholder="Write your message... "></textarea>
                     <input type="submit" value="Send">
             </form>
-            <img src="img/contact-img.jpg" alt="contact-img.jpg">
-            Visit my office 
-            456 New Street 22000, New York City, USA 
-            Contact. 
-            <i class="fa fa-phone" aria-hidden="true">01-0110-0220 12 </i>
-            <i class="fa fa-envelope-o" aria-hidden="true">hello@company.co </i>
-            <i class="fa fa-globe" aria-hidden="true">company.co</i> 
+            <aside class="contact__addresses__aside">
+                <img class="contact__addresses__aside__image" src="img/contact-img.jpg" alt="contact-img.jpg">
+            </aside>
+            <article class="contact__addresses">
+                    Visit my office 
+                    456 New Street 22000, New York City, USA 
+                    Contact. 
+                    <i class="fa fa-phone" aria-hidden="true"><a href="tel:+01-0110-0220 12">01-0110-0220 12</a>  </i>
+                    <i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:hello@company.co">hello@company.co</a>  </i>
+                    <i class="fa fa-globe" aria-hidden="true"><a href="http://company.co">company.co</a> </i> 
+            </article>
+
         </section>
 
     </main>
@@ -147,11 +161,11 @@
     <footer class="main_footer">
         Copiright &copy; 2016 Your Company | Design: <a href="http://">templatemo</a><br>
 
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-google-plus" aria-hidden="true"></i>
-        <i class="fa fa-dribbble" aria-hidden="true"></i>
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="http://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <a href="http://dribbble.com"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        <a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 
 
     </footer>

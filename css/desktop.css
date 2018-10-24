@@ -1,0 +1,61 @@
+.main_wrapper {
+    max-width: 1480px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.main-header {
+    height: 90vh;
+}
+
+.main-home__aside {
+    width: 50%;
+}
+
+.main_home {
+    width:  50%;
+}
+
+
+
+.about__curriculum {
+    width: 50%;
+}
+
+.about__small-sections {
+    width: 15%;
+}
+
+.my-experience__info-aside {
+    width: 50%;
+    height: 350px;
+}
+
+.my-experience__info {
+    width: 50%;
+}
+
+.education {
+    width: 50%;
+}
+
+.education__aside {
+    width:50%;
+}
+
+.contact__form {
+    height: 620px;
+    width: 50%;
+}
+
+.contact__addresses {
+    width:25%;
+}
+
+.addresses__aside {
+    width: 25%;
+}

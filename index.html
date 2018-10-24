@@ -28,21 +28,23 @@
         <aside class="main-home__aside">
             <img class="home_aside">
         </aside>
-        <article class="main_home">
+        <article class="main-home">
 
             <h1>welcome to my website</h1>
-                Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum <br>
+            <h2>Hello, I am <b>Stimulus</b> currently based in New York city.</h2>
+            <p class="main-home__paragraph">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum <br>
                 in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id <br>
                 accumsan quam. 
-            <a href="#about"><button>get started</button></a>
+            </p>
+            <a href="#about"><button class="main-home__get-started-button">get started</button></a>
         </article>
 
     </header>
-    <main class="main_main">
+    <main class="main-main">
         <section class="sections about" id="about">
             <article class="about__curriculum">
-                Donec auctor 
-                Sed vulpuate vitae diam quis bibendum 
+                <h2>Donec auctor</h2>
+                <p>Sed vulpuate vitae diam quis bibendum </p>
                 <p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, <br>
                 faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa. <p>
                 <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, <br>
@@ -51,10 +53,10 @@
             <aside class="about__small-sections my_skills_aside">
             </aside>
             <article class="about__small-sections my_skills">
-                <h3>My Skills</h3>
+                <h2>My Skills</h2>
                 <span>Photoshop</span> . <span>CSS JS</span>  . <span>Design</span> 
                 <div>
-                    <span>Frontend processing</span>
+                    <span>Frontend Design</span>
                     <span>90%</span>
                     <div class="progress-bar">
                         <div class="progress-bar__progress progress-bar__progress_frontend"></div>
@@ -76,27 +78,27 @@
                 </div>
             </article>
             <article class="about__small-sections about__interface-design">
-                <h3><i class="fa fa-desktop" aria-hidden="true"></i></h3>
+                <h2><i class="fa fa-desktop" aria-hidden="true"></i></h2>
                 <h3>Interface Design</h3> 
                 Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. 
             </article>
             <article class="about__small-sections about__media-strategy">
-                <h3>
+                <h2>
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-1x"></i>
                         <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
                     </span>
-                </h3>
+                </h2>
                 <h3>Media Strategy</h3>
                 Curabitur at pulvinar ante. Duis dui urna, faucibus eget fens eu, iaculis congue sem. 
             </article>
             <article class="about__small-sections about__mobile-app">
-                <h3><i class="fa fa-table" aria-hidden="true"></i></h3>
+                <h2><i class="fa fa-table" aria-hidden="true"></i></h2>
                 <h3>Mobile App</h3>
                     Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.
             </article>
             <article class="about__small-sections about__coding">
-                <h3><i class="fa fa-html5" aria-hidden="true"></i></h3>
+                <h2><i class="fa fa-html5" aria-hidden="true"></i></h2>
                 <h3>Coding</h3>
                     Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis. 
             </article>
@@ -109,7 +111,7 @@
                 <img src="img/experience-img.jpg" alt="experience-img.jpg">
             </aside>
             <article class="my-experience__info">
-                <h3>my experiences</h3>
+                <h2>my experiences</h2>
             Previous companies and my tasks
             <ul>
                 <i class="fa fa-laptop fa-3x" aria-hidden="true"></i><i>
@@ -155,23 +157,25 @@
 
         <section class="sections contact" id="contact">
             <form class="contact__form" action="">
-                    Say hello.. <br>
+                    <h2>Say hello..</h2>
                     <p>Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea  placeholder="Write your message... "></textarea><br>
-                    <input type="submit" value="Send">
+                    <input class="form__inputs" type="text" placeholder="Your Name">
+                    <input class="form__inputs" type="email" placeholder="Your Email">
+                    <textarea  class="form__inputs" placeholder="Write your message... "></textarea><br>
+                    <input class="form__send-input" type="submit" value="Send">
             </form>
             <aside class="addresses__aside">
                 <img class="addresses__aside__image" src="img/contact-img.jpg" alt="contact-img.jpg">
             </aside>
             <article class="contact__addresses">
-                    Visit my office <br>
+                    <h3>Visit my office</h3>
+                    <p class="addresses__paragraph_silver">
                     456 New Street 22000, New York City, USA <br>
-                    Contact. <br>
-                    <i class="fa fa-phone" aria-hidden="true"><a href="tel:+01-0110-0220 12">01-0110-0220 12</a>  </i>
-                    <i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:hello@company.co">hello@company.co</a>  </i>
-                    <i class="fa fa-globe" aria-hidden="true"><a href="http://company.co">company.co</a> </i> 
+                    </p>
+                    <h3>Contact.</h3>
+                    <p class="addresses__paragraph_silver"><i class="fa fa-phone" aria-hidden="true"><a href="tel:+01-0110-0220 12"> 01-0110-0220 12</a>  </i></p>                    
+                    <p><i class="fa fa-envelope-o addresses__paragraph_silver" aria-hidden="true"><a class="addresses__paragraph_gold" href="mailto:hello@company.co"> hello@company.co</a>  </i></p>
+                    <p><i class="fa fa-globe addresses__paragraph_silver" aria-hidden="true"><a class="addresses__paragraph_gold" href="http://company.co"> company.co</a> </i> </p>
             </article>
 
         </section>

@@ -1,9 +1,23 @@
 body {
     box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
     color: inherit;
+}
+
+a:hover {
+    color: #e3ae7a;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-weight: 400;
 }
 
 .main_wrapper {
@@ -28,8 +42,12 @@ a {
     background-size: auto 820px;
 }
 
-.main_home {
+.main-home {
     background-color:#f0e2d7;
+}
+
+.main-home__paragraph {
+    font-size: 0.8rem;
 }
 
 .main-navigation {
@@ -47,18 +65,38 @@ a {
     background-color: rgba(0,0,0,0.2);
 }
 
+.main-home__get-started-button {
+    border: #242a26 solid 2px;
+    border-radius: 20px;
+    color: #292a24;
+    text-transform: uppercase;
+}
+
+.main-main {
+    color: white;
+}
+
 .about {
 
 }
 
 .about__curriculum {
     background-color: #ffffff;
+    color: #a5859d;
+}
+
+.about__curriculum p:first-of-type {
+    color: #e2bcaf;
 }
 
 .about__small-sections {
     text-align: center;
     padding: 5%;
     min-height: 350px;
+}
+
+.about__small-sections:last-of-type {
+    color: black;
 }
 
 .my_skills_aside {
@@ -156,8 +194,30 @@ a {
     background-color: #e9714c;
 }
 
+.form__inputs {
+    background-color: #e9714c;
+    border: 0;
+    border-bottom: #e4ae58 1px solid;
+    color: white;
+}
+
+.form__send-input {
+    width: 50%;
+    border-radius: 25px;
+    background-color: white;
+    border: 0;
+}
+
 .contact__addresses {
     background-color: #161616;
+}
+
+.addresses__paragraph_silver {
+    color: #777f72;
+}
+
+.addresses__paragraph_gold {
+    color: #8f6b39;
 }
 
 .addresses__aside {

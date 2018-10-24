@@ -16,8 +16,12 @@ body {
     width: 100%;
 }
 
-.main_home {
+.main-home {
     width:  100%;
+}
+
+.main-navigation {
+    padding-left: 0;
 }
 
 .about__curriculum {

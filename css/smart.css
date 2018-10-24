@@ -1,11 +1,10 @@
 html {
     overflow-y: scroll;
-    
+    font-size: 24px;
 }
 
 .main_wrapper {
     min-width: 305px;
-    font-size: 24px;
 }
 
 .sections {

@@ -1,5 +1,5 @@
 body {
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .main_wrapper {
@@ -12,53 +12,48 @@ body {
     flex-wrap: wrap; 
 }
 
-.main-header {
-   
-}
-
 .main-home__aside {
     width: 100%;
-    height: 790px;
 }
 
 .main_home {
-    width:  50%;
+    width:  100%;
 }
 
 .about__curriculum {
-    width: 50%;
+    width: 100%;
 }
 
 .about__small-sections {
-    width: 15%;
+    width: 40%;
 }
 
 .my-experience__info-aside {
-    width: 50%;
+    width: 100%;
     height: 350px;
 }
 
 .my-experience__info {
-    width: 50%;
+    width: 100%;
 }
 
 .education {
-    width: 50%;
+    width: 100%;
 }
 
 .education__aside {
-    width:50%;
+    width: 100%;
 }
 
 .contact__form {
     height: 620px;
-    width: 50%;
+    width: 100%;
 }
 
 .contact__addresses {
-    width:25%;
+    width: 50%;
 }
 
 .addresses__aside {
-    width: 25%;
+    width: 50%;
 }

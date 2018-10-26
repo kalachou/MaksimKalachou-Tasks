@@ -18,17 +18,23 @@ html {
 }
 
 .home_aside {
-    height: 40vh;
-    background: url(../img/home-img.jpg) no-repeat -60px -7px;
-    background-size: 120%;
+    min-width: 305px;
+    height: 60vw;
+    background: url(../img/home-img.jpg) no-repeat;
+    background-size: auto 90vw;
 }
 
 .main-home {
     width:  100%;
+    padding: 3%;
 }
 
 .my-experience__info-aside {
     margin-bottom: -6px;
+}
+
+.my-experience__info-aside img {
+    width: 100%;
 }
 
 .about__curriculum {

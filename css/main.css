@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     box-sizing: content-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,11 +17,23 @@ a:hover {
 
 h1 {
     font-size: 1rem;
+    text-transform: uppercase;
+    color: gray;
 }
 
 h2 {
-    text-transform: capitalize;
+
     font-weight: 400;
+}
+
+h4 {
+    margin: 10% 15%;
+    width: 10%;
+}
+
+.date {
+    color: black;
+    display: block;
 }
 
 .main_wrapper {
@@ -37,9 +53,8 @@ h2 {
 }
 
 .home_aside {
-    width: 100%;
     background: url('../img/home-img.jpg') no-repeat -343px -30px;
-    background-size: auto 820px;
+    background-size: auto 90vw;
 }
 
 .main-home {
@@ -48,6 +63,7 @@ h2 {
 
 .main-home__paragraph {
     font-size: 0.8rem;
+    color: #695b5b;
 }
 
 .main-navigation {
@@ -62,14 +78,17 @@ h2 {
 }
 
 .main-navigation div:hover {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
 }
 
 .main-home__get-started-button {
-    border: #242a26 solid 2px;
-    border-radius: 20px;
+    border: #242a26 solid 3px;
+    border-radius: 25px;
     color: #292a24;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 3%;
 }
 
 .main-main {
@@ -83,6 +102,7 @@ h2 {
 .about__curriculum {
     background-color: #ffffff;
     color: #a5859d;
+    padding: 5%;
 }
 
 .about__curriculum p:first-of-type {
@@ -91,7 +111,7 @@ h2 {
 
 .about__small-sections {
     text-align: center;
-    padding: 5%;
+    padding: 2%;
     min-height: 350px;
 }
 
@@ -109,11 +129,24 @@ h2 {
 
 .progress-bar {
     background-color: white;
+    clear:both;
+    margin-bottom: 1rem;
 }
 
 .progress-bar__progress {
     height:4px;
     background-color: black;
+}
+
+.progress-bar__label {
+    color: black;
+    font-size: 1.6rem;
+    float:  left;
+}
+
+.progress-bar__value {
+    font-size: 1.6rem;
+    float: right;
 }
 
 .progress-bar__progress_frontend {
@@ -157,12 +190,13 @@ h2 {
 }
 
 .my-experience__info-aside img {
-    width: 100%;
-    height: auto;
+    /* width: 100%; */
+    /* height: 100%; */
 }
 
 .my-experience__info {
     background-color: #e9714c;
+    padding:  3%;
 }
 
 .education {
@@ -179,11 +213,13 @@ h2 {
 
 .proin {
     width: 100%;
-    height: 480px;
+    min-height: 480px;
     text-align: center;
     background: url("../img/quotes-bg.jpg") no-repeat 0px 0px;
     background-size: cover;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.97);
+    opacity: 0.7;
+    padding: 10%;
 }
 
 .contact {
@@ -225,10 +261,12 @@ h2 {
 }
 
 .addresses__aside__image {
-   
-    margin: -90px -150px -230px -510px;
+   margin: -90px -150px -230px -555px;
+   overflow:  hidden;
 }
 
 .main_footer {
     text-align: center;
+    height: 10vw;
+    padding: 10%;
 }

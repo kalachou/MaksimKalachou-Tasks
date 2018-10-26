@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Custom';
+    src: url('../fonts/reproxscript.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header, .main, .footer {
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.header {    
+    width: 950px;
+    height: 200px;
+    margin-bottom: 7px;
+    overflow: hidden; 
+    background-color: #f5f5f2;
+}
+
+.header__parts__background {
+    position: relative;
+    width: fit-content;
+    top:-20px;   
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(-3deg); 
+}
+
+.header__left_part {
+    display: inline-block;
+    height: 100%;
+    width: fit-content;
+    position: relative;
+    top: 0;
+    left: -7%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.header__right_part {
+    display: inline-block;
+    height: 100%;
+    width: fit-content;
+    position: relative;
+    top: -100%;
+    left: 88%;
+}
+
+.header__central_part {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 80%;
+    width: fit-content;
+    height: 100%;
+    position: relative; 
+    overflow: hidden; 
+    left: -7%;  
+}
+
+.header__headline_wrapper {
+    position: absolute;
+    width: 287px;
+    height: 62px;
+    top: 68px;
+    left: 332px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    border: 2px solid black;
+    outline: 4px solid white;
+}
+
+h1 {
+    font-family: 'Custom';
+    letter-spacing: 2px;
+    word-spacing: -10px;
+    opacity: 0.7;
+    font-stretch: ultra-expanded;
+    width: 240px;
+    margin: -15px auto 0;
+    font-stretch: ultra-expanded;
+}
+
+.main, .footer {
+    width: 940px;
+    height: 116px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    padding: 18px 25px;
+}
+
+.footer {
+    background-color: #333333;
+}
+
+/*sprites*/
+.sprite {
+    display: inline-block;
+    border-radius: 20%;
+    margin: 10px;
+	width: 40px;
+	height: 40px;
+}
+
+.facebook {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -22px -107px;
+
+}
+
+.two_rounds {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -106px -108px;
+}
+
+.world {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -190px -105px;
+}
+
+.google {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -274px -106px;
+}
+
+.linkedin {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -358px -106px;
+}
+
+.pinned {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -442px -106px;
+}
+
+.rss {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -526px -106px;
+}
+
+.skype {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -610px -106px;
+}
+
+.twitter {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -693px -106px;
+}
+
+.v {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -778px -105px;
+}
+
+.youtube {
+	background: url('../img/spice-social-gadget-sprite.png') no-repeat -862px -106px;
+}
+
+/*buttons*/
+.main__button {
+    border: 0;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    font-size: 0.5em;
+    margin-bottom: 10px;
+    box-shadow: 0.1em 0.1em 3px rgba(122,122,122,0.7);	
+}
+
+.pink {
+    background-color: #e850a9;
+    font-size: 1em;
+}
+
+.green {
+    background-color: #a9cb3f;    
+}
+
+.blue {
+    background-color: #5b9fea;
+}
+
+.red {
+    background-color: #eb5656;
+}
+
+.orange {
+    background-color: #e46420;
+}
+
+.yellow {
+    background-color: #ffc548;
+}
+
+.small {
+    font-size: 0.25em;
+}
+
+/*https://yraaa.ru/scripts/snow-css3*/
+.snow {
+    width: 100%; 
+    height: 100%; 
+    background-image: 
+        url("../img/snow1.png"), 
+        url("../img/snow2.png"), 
+        url("../img/snow3.png"); 
+    -webkit-animation: snow 8s linear infinite;
+    -moz-animation: snow 8s linear infinite;
+    -ms-animation: snow 8s linear infinite;
+    animation: snow 8s linear infinite;}
+@keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-moz-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-webkit-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-ms-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}

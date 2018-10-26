@@ -5,83 +5,107 @@
     font-style: normal;
 }
 
-.header, .main, .footer {
-    border: 1px solid gray;
+* {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
-.header {    
+.header, .main, .footer {
+    border: 1px solid gray;
+}
+
+.header {
     width: 950px;
     height: 200px;
     margin-bottom: 7px;
-    overflow: hidden; 
+    overflow: hidden;
     background-color: #f5f5f2;
 }
 
 .header__parts__background {
     position: relative;
-    width: fit-content;
-    top:-20px;   
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
-    transform: rotate(-3deg); 
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    top: -68px;
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg); 
+    left: 15px;
 }
 
 .header__left_part {
     display: inline-block;
     height: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     position: relative;
     top: 0;
-    left: -7%;
-    overflow: hidden;
+    left: -1%;
+    /* overflow: hidden; */
     margin: 0;
 }
 
 .header__right_part {
     display: inline-block;
-    height: 100%;
-    width: fit-content;
-    position: relative;
-    top: -100%;
-    left: 88%;
+    /* height: 100%; */
+    /* width: fit-content; */
+    /*! position: relative; */
+    /*! top: -100%; */
+    /*! left: -16px; */
 }
 
 .header__central_part {
     display: inline-block;
-    margin: 0 auto;
-    max-width: 80%;
+    /* margin: 0 auto; */
+    max-width: 90%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     height: 100%;
-    position: relative; 
-    overflow: hidden; 
-    left: -7%;  
+    overflow: hidden;
+    position: relative;
+    left: -8px;
+    top: -97px;
 }
 
 .header__headline_wrapper {
-    position: absolute;
-    width: 287px;
-    height: 62px;
-    top: 68px;
-    left: 332px;
-    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    width: 290px;
+    height: 67px;
+    top: -235px;
+    left: 0;
+    opacity: 0.8;
     margin: 0 auto;
-    border: 2px solid black;
-    outline: 4px solid white;
+    border: 3px solid black;
+    outline: 5px solid white;
+    background-color: rgba(122,122,122,0.7);
 }
 
-h1 {
+.h1 {
     font-family: 'Custom';
     letter-spacing: 2px;
-    word-spacing: -10px;
-    opacity: 0.7;
+    word-spacing: -5px;
+    opacity: 1;
     font-stretch: ultra-expanded;
     width: 240px;
-    margin: -15px auto 0;
-    font-stretch: ultra-expanded;
-}
+    height: 100%;
+    margin: 0 auto; 
+    /* font-stretch: ultra-expanded; */
+    background-image:   
+    url("https://www.textures.com/system/gallery/photos/Ground/Ice/44341/Ice0052_2_download600.jpg");
+    background-size: cover;
+    font-size: 1.7rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:  gray; /*for browsers does not support clip above*/
+    -webkit-animation: snow 8s linear infinite;
+    animation: snow 8s linear infinite;
+    }
+    @keyframes h1 {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 0px 500px, 0px 0px, 0px 0px;}}
+    @-webkit-keyframes h1 {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 0px 500px, 0px 0px, 0px 0px;}}
 
 .main, .footer {
     width: 940px;
@@ -96,97 +120,109 @@ h1 {
 }
 
 /*sprites*/
-.sprite {
-    display: inline-block;
-    border-radius: 20%;
-    margin: 10px;
-	width: 40px;
-	height: 40px;
-}
-
 .facebook {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -22px -107px;
+    background: no-repeat -5px -38px;
 
 }
 
 .two_rounds {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -106px -108px;
+    background: no-repeat -38px -38px;
 }
 
 .world {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -190px -105px;
+    background: no-repeat -71px -38px;
 }
 
 .google {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -274px -106px;
+    background: no-repeat -104px -38px;
 }
 
 .linkedin {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -358px -106px;
+    background: no-repeat -137px -38px;
 }
 
 .pinned {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -442px -106px;
+    background: no-repeat -171px -38px;
 }
 
 .rss {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -526px -106px;
+    background: no-repeat -204px -38px;
 }
 
 .skype {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -610px -106px;
+    background: no-repeat -238px -38px;
 }
 
 .twitter {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -693px -106px;
+    background: no-repeat -270px -38px;
 }
 
 .v {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -778px -105px;
+    background: no-repeat -305px -38px;
 }
 
 .youtube {
-	background: url('../img/spice-social-gadget-sprite.png') no-repeat -862px -106px;
+    background: no-repeat -337px -38px;
+}
+
+.sprite {
+    display: inline-block;
+    border-radius: 18%;
+    margin: 15px 15px 0 0;
+    width: 24px;
+    height: 24px;
+    background-size: auto 100px;
+    background-image: url(../img/spice-social-gadget-sprite.png);
+}
+
+.background-row_ordinar, .background-row_sapacering {
+    display: inline-block;
+}
+
+.background-row_ordinar {
+    padding-left: 2px;
 }
 
 /*buttons*/
 .main__button {
-    border-radius: 5px;
+    border: 0;
+    border-radius: 3px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     font-weight: bold;
     color: white;
     font-size: 0.5em;
     margin-bottom: 10px;
-    box-shadow: 0.1em 0.1em 3px rgba(122,122,122,0.7);	
+    -webkit-box-shadow: 0.1em 0.1em 3px rgba(122,122,122,0.7);
+            box-shadow: 0.1em 0.1em 3px rgba(122,122,122,0.7);	
 }
 
-.pink {
-    background-color: #e850a9;
-    font-size: 1em;
+.main__button_pink {
+    background-color: #e74ca7;
+    font-size: 1rem;
 }
 
-.green {
-    background-color: #a9cb3f;    
+.main__button_green {
+    background-color: #a1c52c;
 }
 
-.blue {
-    background-color: #5b9fea;
+.main__button_blue {
+    background-color: #4792e7;
 }
 
-.red {
-    background-color: #eb5656;
+.main__button_red {
+    background-color: #ec5959;
 }
 
-.orange {
-    background-color: #e46420;
+.main__button_orange {
+    background-color: #ff7d35;
 }
 
-.yellow {
-    background-color: #ffc548;
+.main__button_yellow {
+    background-color: #ffbe33;
 }
 
-.small {
+.main__button_small {
     font-size: 0.25em;
 }
 
@@ -199,10 +235,6 @@ h1 {
         url("../img/snow2.png"), 
         url("../img/snow3.png"); 
     -webkit-animation: snow 8s linear infinite;
-    -moz-animation: snow 8s linear infinite;
-    -ms-animation: snow 8s linear infinite;
     animation: snow 8s linear infinite;}
 @keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
-@-moz-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
 @-webkit-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
-@-ms-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}

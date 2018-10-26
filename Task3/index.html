@@ -6,35 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="css/main.css" media="(min-width: 768px) and (max-width:1920px)" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1025px)" />
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 769px) and (max-width:1024px)" />
+    <link rel="stylesheet" href="css/tablets.css" media="(min-width: 601px) and (max-width:768px)" />
+    <link rel="stylesheet" href="css/tablets.css" media="(min-width: 481px) and (max-width:600px)" />
+    <link rel="stylesheet" href="css/smart.css" media="(min-width: 321px) and (max-width:480px)" />
+    <link rel="stylesheet" href="css/smart.css" media="(max-width:320px)" />
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="main_wrapper">
-    <header class="sections main_header" id="home">
-        <nav class="header__navigation">
+        <nav class="main-navigation">
             <a href="#home"><div>home</div></a>
             <a href="#about"><div>about me</div></a>
             <a href="#eperiences"><div>experiences</div></a>
             <a href="#testimonial"><div>testimonial</div></a>
             <a href="#contact"><div>contact</div></a>
         </nav>
-        <img class="home_aside" alt="home-img.jpg">
+    <header class="sections main-header" id="home">
+        <aside class="home_aside">
+                <h4>Stimulus</h4>
         </aside>
-        <article class="main_home">
-        <h1>welcome to my website</h1>
-        Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum <br>
-        in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id <br>
-        accumsan quam. 
-        <a href="#about"><div>get started</div></a>
-        </article>
-    </header>
+        <article class="main-home">
 
-    <main class="main_main">
+            <h1>welcome to my website</h1>
+            <h2>Hello, I am <b>Stimulus</b> currently based in New York city.</h2>
+            <p class="main-home__paragraph">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum <br>
+                in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id <br>
+                accumsan quam. 
+            </p>
+            <a href="#about"><button class="main-home__get-started-button">get started</button></a>
+        </article>
+
+    </header>
+    <main class="main-main">
         <section class="sections about" id="about">
             <article class="about__curriculum">
-                Donec auctor 
-                Sed vulpuate vitae diam quis bibendum 
+                <h2>Donec auctor</h2>
+                <p>Sed vulpuate vitae diam quis bibendum </p>
                 <p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, <br>
                 faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa. <p>
                 <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, <br>
@@ -43,42 +53,53 @@
             <aside class="about__small-sections my_skills_aside">
             </aside>
             <article class="about__small-sections my_skills">
-                My Skills
-                Photoshop . HTML CSS JS . Web Design
-                Frontend Design 90%
+                <h2>My Skills</h2>
+                <span>Photoshop</span> . <span>CSS JS</span>  . <span>Design</span> 
                 <div>
-                    <div style="height:4px;width:90%;background-color: black;"></div>
-                </div><br>
-                Backend processing 70%
+                    <span class="progress-bar__label">Frontend Design</span>
+                    <span class="progress-bar__value">90%</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar__progress progress-bar__progress_frontend"></div>
+                    </div>
+                </div>
                 <div>
-                    <div style="height:4px;width:70%;background-color: black;"></div>
-                </div><br>
-                HTML5 & CSS3 80%
+                    <span class="progress-bar__label">Backend processing</span>
+                    <span class="progress-bar__value">70%</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar__progress progress-bar__progress_backend"></div>
+                    </div>
+                </div>
                 <div>
-                    <div style="height:4px;width:80%;background-color: black;"></div>
-                </div><br>
+                    <span class="progress-bar__label">HTML5 & CSS3</span>
+                    <span class="progress-bar__value">80%</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar__progress progress-bar__progress_html"></div>
+                    </div>
+                </div>
             </article>
             <article class="about__small-sections about__interface-design">
-                <i class="fa fa-desktop" aria-hidden="true"></i>
-                Interface Design 
+                <h2><i class="fa fa-desktop" aria-hidden="true"></i></h2>
+                <h3>Interface Design</h3> 
                 Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. 
             </article>
             <article class="about__small-sections about__media-strategy">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-1x"></i>
-                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
-                  </span>
-                Media Strategy 
+                <h2>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-1x"></i>
+                        <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                    </span>
+                </h2>
+                <h3>Media Strategy</h3>
                 Curabitur at pulvinar ante. Duis dui urna, faucibus eget fens eu, iaculis congue sem. 
             </article>
             <article class="about__small-sections about__mobile-app">
-                    <i class="fa fa-table" aria-hidden="true"></i>
-                    Mobile App 
+                <h2><i class="fa fa-table" aria-hidden="true"></i></h2>
+                <h3>Mobile App</h3>
                     Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.
             </article>
             <article class="about__small-sections about__coding">
-                    <i class="fa fa-html5" aria-hidden="true"></i>
-                    Coding 
+                <h2><i class="fa fa-html5" aria-hidden="true"></i></h2>
+                <h3>Coding</h3>
                     Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis. 
             </article>
 
@@ -90,15 +111,15 @@
                 <img src="img/experience-img.jpg" alt="experience-img.jpg">
             </aside>
             <article class="my-experience__info">
-            my experiences
+                <h2>my experiences</h2>
             Previous companies and my tasks
             <ul>
                 <i class="fa fa-laptop fa-3x" aria-hidden="true"></i><i>
-                    Graphic Designer 2014 Jul - 2015 Sep
+                    Graphic Designer <span class="date">2014 Jul - 2015 Sep</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </i><br>
                 <i class="fa fa-laptop fa-3x" aria-hidden="true"></i><i>
-                    Web Designer 2015 Oct - 2017 Jan
+                    Web Designer <span class="date">2015 Oct - 2017 Jan</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </i>
             </ul>
@@ -108,25 +129,26 @@
 
         <section class="sections" id="testimonial">
             <article class="education">
-            My Education
+            <h3>My Education</h3>
             In cursus orci non ipsum gravida dignissim 
             <ul>
-                <i class="fa fa-laptop fa-3x" aria-hidden="true">
-                        Master  in Design 2012 Jan - 2014 May
+                <li><i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+                        Master  in Design <span class="date">2012 Jan - 2014 May</span>
                         Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper<br>
                         dignissim eu in neque.
 
-                </i>
-                <i class="fa fa-laptop fa-3x" aria-hidden="true">
-                    Bachelor of Arts 2008 May - 2011 Dec
+                
+                <li><i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+                    Bachelor of Arts <span class="date">2008 May - 2011 Dec</span>
                     Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus<br>
-                    mus.
-                </i>
+                    mus.                
             </ul>
             </article>
-            <aside class="education__aside"><img src="img/education-img.jpg" alt="education-img.jpg"></aside>
+            <aside class="education__aside">
+                <img src="img/education-img.jpg" alt="education-img.jpg">
+            </aside>
             <article class="proin">
-            <i class="fa fa-star fa-5x fa-inverse" aria-hidden="true"></i><br>
+            <i class="fa fa-star fa-3x fa-inverse" aria-hidden="true"></i><br>
             Proin lobortis eu diam et facilisis. Fusce nisi nibh, <br>
             molestie in vestibulum quis, auctor et orci. 
             <p>Curabitur at pulvinar ante. Duis dui urna, faucibus egAis eu, iaculis congue sem. </p>
@@ -135,23 +157,25 @@
 
         <section class="sections contact" id="contact">
             <form class="contact__form" action="">
-                    Say hello.. 
-                    Integer ut consectetur est. In cursus orci non ipsum gravida dignissim. 
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea  placeholder="Write your message... "></textarea>
-                    <input type="submit" value="Send">
+                    <h2>Say hello..</h2>
+                    <p>Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
+                    <input class="form__inputs" type="text" placeholder="Your Name">
+                    <input class="form__inputs" type="email" placeholder="Your Email">
+                    <textarea  class="form__inputs" placeholder="Write your message... "></textarea><br>
+                    <input class="form__send-input" type="submit" value="Send">
             </form>
-            <aside class="contact__addresses__aside">
-                <img class="contact__addresses__aside__image" src="img/contact-img.jpg" alt="contact-img.jpg">
+            <aside class="addresses__aside">
+                <img class="addresses__aside__image" src="img/contact-img.jpg" alt="contact-img.jpg">
             </aside>
             <article class="contact__addresses">
-                    Visit my office 
-                    456 New Street 22000, New York City, USA 
-                    Contact. 
-                    <i class="fa fa-phone" aria-hidden="true"><a href="tel:+01-0110-0220 12">01-0110-0220 12</a>  </i>
-                    <i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:hello@company.co">hello@company.co</a>  </i>
-                    <i class="fa fa-globe" aria-hidden="true"><a href="http://company.co">company.co</a> </i> 
+                    <h3>Visit my office</h3>
+                    <p class="addresses__paragraph_silver">
+                    456 New Street 22000, New York City, USA <br>
+                    </p>
+                    <h3>Contact.</h3>
+                    <p class="addresses__paragraph_silver"><i class="fa fa-phone" aria-hidden="true"><a href="tel:+01-0110-0220 12"> 01-0110-0220 12</a>  </i></p>                    
+                    <p><i class="fa fa-envelope-o addresses__paragraph_silver" aria-hidden="true"><a class="addresses__paragraph_gold" href="mailto:hello@company.co"> hello@company.co</a>  </i></p>
+                    <p><i class="fa fa-globe addresses__paragraph_silver" aria-hidden="true"><a class="addresses__paragraph_gold" href="http://company.co"> company.co</a> </i> </p>
             </article>
 
         </section>

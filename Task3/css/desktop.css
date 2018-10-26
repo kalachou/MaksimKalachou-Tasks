@@ -1,0 +1,84 @@
+body {
+    font-size: 24px;
+}
+
+.main_wrapper {
+    max-width: 1480px;
+    margin-top: -7%;
+}
+
+.main-navigation {
+    
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.main-header {
+   
+}
+
+.main-home__aside {
+
+}
+
+.home_aside {
+    background: url(../img/home-img.jpg) no-repeat;
+    background-size: auto 56vw;
+    width: 50%;
+    height: 56vw;
+    background-position: center;
+}
+
+.main-home {
+    width: 50%;
+    height: 56vw;
+    padding: 8%;
+}
+
+.about__curriculum {
+    width: 50%;
+}
+
+.about__small-sections {
+    width: 25%;
+}
+
+.my-experience__info-aside {
+    width: 50%;
+    height: 350px;
+}
+
+.my-experience__info {
+    width: 50%;
+}
+
+.education {
+    width: 50%;
+    padding: 4%;
+}
+
+.education__aside {
+    width:50%;
+    max-height: 632px;
+    margin-bottom: -300px;
+    /* overflow:  hidden; */
+}
+
+.contact__form {
+    height: 620px;
+    width: 50%;
+    padding:  5%;
+    font-size: 2rem;
+}
+
+.contact__addresses {
+    width:25%;
+}
+
+.addresses__aside {
+    width: 25%;
+}

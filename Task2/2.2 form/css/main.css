@@ -2,6 +2,7 @@
     padding: 20px 0 0 20px;
     width: 420px;
     height: 470px;
+    border-bottom: 2px solid gray;
 }
 
 .form__headline_main {
@@ -40,6 +41,9 @@
 .form__choice_type {
     margin: 4px 0 20px 0;
     padding: 4px 6px;
+    border-radius: 6px;
+    height: 28px;
+    width: 125px;
 }
 
 .form__choices_wrapper {
@@ -54,9 +58,9 @@
 
 .form__choices_wrapper__choice_wrapper {
     border: 1px solid gray;
-    width: 330px;
+    width: 339px;
     display: inline-block;
-    margin: 0px 0 15px;
+    margin: 0px 0px 15px -10px;
 }
 
 /*custom radiobuttons*/
@@ -126,14 +130,15 @@
 
 .form__choices__disabler {
     position: relative;
-
     width: 12px;
     height: 12px;
     opacity: 0.3;
     }
+
 .form__choices__disabler:hover {
     opacity: 1;
     }
+
 .form__choices__disabler:before, .form__choices__disabler:after {
     position: absolute;
     left: 8px;
@@ -143,9 +148,11 @@
     width: 2px;
     background-color: #333;
     }
+
 .form__choices__disabler:before {
     transform: rotate(45deg);
     }
+
 .form__choices__disabler:after {
     transform: rotate(-45deg);
     }
@@ -177,7 +184,8 @@
 
 .form__submit {
     margin-top: 22px;
-    border-radius: 2px;
+    border: 0;
+    border-radius: 4px;
     background-color: #0085ba;
     color: #ffffff;
     padding: 5px 10px 5px 7px;

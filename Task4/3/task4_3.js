@@ -1,4 +1,4 @@
-function getSumFirstEvenFibonacci (n) {
+module.exports = function getSumFirstEvenFibonacci (n) {
     let first = 1;
     let second = 1;
     let temp;

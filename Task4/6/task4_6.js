@@ -1,5 +1,5 @@
-function getMaxValue (arr) {
+module.exports = function getMaxValue (arr) {
 
-    return arr.reduce((p,v) => v>p ? p=v : p);
+    return arr.reduce((previous,current) => current > previous ? previous = current : previous);
 
 }

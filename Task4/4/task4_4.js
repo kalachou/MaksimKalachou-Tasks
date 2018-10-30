@@ -1,4 +1,4 @@
-function getTenLastDigits (n) {
+module.exports = function getTenLastDigits (n) {
 
     if ( n > 1000 || n < 1) throw Error("n not in range 1..1000");
     let sumResult = 0;

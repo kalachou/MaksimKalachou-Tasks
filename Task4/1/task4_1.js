@@ -1,4 +1,4 @@
-function getFirstPrimesLessThanN (n) {
+module.exports = function getFirstPrimesLessThanN (n) {
   let sqrt = Math.sqrt(n)+1;//+1 for cases <= to use < instead
   let compareN = n+1;//for cases <= to use < instead
   let isprime = new Uint32Array(n+1);

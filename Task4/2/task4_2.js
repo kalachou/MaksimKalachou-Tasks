@@ -1,4 +1,4 @@
-function getNFirstPrimes (n) {
+module.exports = function getNFirstPrimes (n) {
     let limit = n * 8;
     let sqrt = Math.sqrt(limit)+1;//+1 for cases <= to use < instead
     let compareN = limit+1;//for cases <= to use < instead
@@ -32,4 +32,3 @@ function getNFirstPrimes (n) {
     return isprime.filter((v,i)=>!!v &&(i===3 || i%3!==0) &&(i===5|| i%5!==0)).slice(0,n);
   
   }
-  

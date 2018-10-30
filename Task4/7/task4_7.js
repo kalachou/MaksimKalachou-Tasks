@@ -1,4 +1,4 @@
-function getUnicValues (arr) {
+module.exports = function getUnicValues (arr) {
     let result = [];
     while (arr.length) {
         result.push(arr[0]);

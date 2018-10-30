@@ -1,0 +1,23 @@
+{
+  "name": "task4",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1"
+  },
+  "description": "training_center",
+  "version": "1.0.0",
+  "main": "./1/task4_1.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalachou/MaksimKalachou-Tasks"
+  },
+  "author": "kalachou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalachou/MaksimKalachou-Tasks/issues"
+  },
+  "homepage": "https://github.com/kalachou/MaksimKalachou-Tasks#readme"
+}

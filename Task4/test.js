@@ -27,9 +27,19 @@ describe('getNFirstPrimes', () => {
     assert.deepEqual(result, [2]);
   });
 
-  it('3 first prime', () => {
+  it('3 first primes', () => {
     const result = getNFirstPrimes(3);
     assert.deepEqual(result, [2,3,5]);
+  });
+
+  it('20th prime', () => {
+    const result = getNFirstPrimes(20);
+    assert.deepEqual(result[19], 71);
+  });
+
+  it('60th prime', () => {
+    const result = getNFirstPrimes(60);
+    assert.deepEqual(result[59], 281);
   });
 });
 

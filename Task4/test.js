@@ -19,6 +19,54 @@ describe('getFirstPrimesLessThanN', () => {
     const result = getFirstPrimesLessThanN(10);
     assert.deepEqual(result, [2, 3, 5, 7]);
   });
+
+  it('100', () => {
+    const result = getFirstPrimesLessThanN(100);
+    assert.equal(result.length, 25);
+    assert.equal(result.pop(), 97);
+  });
+
+  it('101', () => {
+    const result = getFirstPrimesLessThanN(101);
+    assert.equal(result.length, 25);
+    assert.equal(result.pop(), 97);
+  });
+
+  it('3571', () => {
+    const result = getFirstPrimesLessThanN(3571);
+    assert.equal(result.length, 499);
+    assert.equal(result.pop(), 3559);
+    assert.equal(result[59], 281);
+    assert.equal(result[159], 941);
+    assert.equal(result[199], 1223);
+    assert.equal(result[200], 1229);
+    assert.equal(result[306], 2027);
+    assert.equal(result[307], 2029);
+  });
+
+  it('10 000', () => {
+    const result = getFirstPrimesLessThanN(10000);
+    assert.equal(result.length, 1229);
+    assert.equal(result[result.length-1], 9973);
+  });
+
+  it('100 000', () => {
+    const result = getFirstPrimesLessThanN(100000);
+    assert.equal(result.length, 9592);
+    assert.equal(result[result.length-1], 99991);
+  });
+
+  it('1 000 000', () => {
+    const result = getFirstPrimesLessThanN(1000000);
+    assert.equal(result.length, 78498);
+    assert.equal(result[result.length-1], 999983);
+  });
+
+  it('10 000 000', () => {
+    const result = getFirstPrimesLessThanN(10000000);
+    assert.equal(result.length, 664579);
+    //assert.equal(result[result.length-1], 999983);
+  });
 });
 
 describe('getNFirstPrimes', () => {

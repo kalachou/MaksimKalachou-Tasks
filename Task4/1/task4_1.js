@@ -4,7 +4,9 @@ module.exports = function getFirstPrimesLessThanN(n) {
   let i2 = 0;
   let j2;
   let num;
-  let i, j, s;
+  let i;
+  let j;
+  let s;
 
   for (i = 1; i < sqrt; i++) {
     i2 += 2 * i - 1;
@@ -28,10 +30,11 @@ module.exports = function getFirstPrimesLessThanN(n) {
   isPrime[2] = 1;
   isPrime[3] = 1;
 
-return isPrime.reduce((p, v, i) =>
-            { if (!!v 
-              && (i === 3 || i % 3 !== 0) 
-              && (i === 5 || i % 5 !== 0)) p.push(i); return p; }, []);
+  return isPrime.reduce((p, v, i) => {
+    if (!!v
+          && (i === 3 || i % 3 !== 0)
+          && (i === 5 || i % 5 !== 0)) p.push(i); return p;
+  }, []);
 };
 /*
 function getNFirstPrimes (n) {

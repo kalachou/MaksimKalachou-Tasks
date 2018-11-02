@@ -8,10 +8,9 @@ const getSumFirstEvenFibonacci = require('./3/task4_3.js');
 const getTenLastDigits = require('./4/task4_4.js');
 const getAverageValue = require('./5/task4_5.js');
 const getMaxValue = require('./6/task4_6.js');
-const getUnicValues = require('./7/task4_7.js');
+const getUniqueValues = require('./7/task4_7.js');
 const isPalindrome = require('./8/task4_8.js');
 const getSumDigits = require('./9/task4_9.js');
-
 
 
 describe('getFirstPrimesLessThanN', () => {
@@ -44,28 +43,34 @@ describe('getFirstPrimesLessThanN', () => {
     assert.equal(result[307], 2029);
   });
 
-  it('10 000', () => {
+  it('10,000', () => {
     const result = getFirstPrimesLessThanN(10000);
     assert.equal(result.length, 1229);
-    assert.equal(result[result.length-1], 9973);
+    assert.equal(result[result.length - 1], 9973);
   });
 
-  it('100 000', () => {
+  it('100,000', () => {
     const result = getFirstPrimesLessThanN(100000);
     assert.equal(result.length, 9592);
-    assert.equal(result[result.length-1], 99991);
+    assert.equal(result[result.length - 1], 99991);
   });
 
-  it('1 000 000', () => {
+  it('1,000,000', () => {
     const result = getFirstPrimesLessThanN(1000000);
     assert.equal(result.length, 78498);
-    assert.equal(result[result.length-1], 999983);
+    assert.equal(result[result.length - 1], 999983);
   });
 
-  it('10 000 000', () => {
+  it('10,000,000', () => {
     const result = getFirstPrimesLessThanN(10000000);
     assert.equal(result.length, 664579);
-    //assert.equal(result[result.length-1], 999983);
+    // assert.equal(result[result.length-1], 999983);
+  });
+
+  it('1,000,000,000', function getPrimesTest() {
+    this.timeout(250000);
+    const result = getFirstPrimesLessThanN(1000000000);
+    assert.equal(result.length, 50847534);
   });
 });
 
@@ -77,17 +82,34 @@ describe('getNFirstPrimes', () => {
 
   it('3 first primes', () => {
     const result = getNFirstPrimes(3);
-    assert.deepEqual(result, [2,3,5]);
+    assert.deepEqual(result, [2, 3, 5]);
   });
 
   it('20th prime', () => {
     const result = getNFirstPrimes(20);
-    assert.deepEqual(result[19], 71);
+    assert.equal(result[19], 71);
+  });
+
+  it('25th prime', () => {
+    const result = getNFirstPrimes(25);
+    assert.equal(result[result.length - 1], 97);
   });
 
   it('60th prime', () => {
     const result = getNFirstPrimes(60);
-    assert.deepEqual(result[59], 281);
+    assert.equal(result[59], 281);
+  });
+
+  it('500th prime', () => {
+    const result = getNFirstPrimes(500);
+    assert.equal(result.length, 500);
+    assert.equal(result[result.length - 1], 3571);
+  });
+
+  it('1,000,000th prime', function getPrimesTest() {
+    this.timeout(10000);
+    const result = getNFirstPrimes(1000000);
+    assert.equal(result[result.length - 1], 15485863);
   });
 });
 
@@ -134,9 +156,9 @@ describe('getMaxValue', () => {
   });
 });
 
-describe('getUnicValues', () => {
+describe('getUniqueValues', () => {
   it('[1,"word", 1, "word", "word", "word1"]', () => {
-    const result = getUnicValues([1,"word", 1, "word", "word", "word1"]);
+    const result = getUniqueValues([1, 'word', 1, 'word', 'word', 'word1']);
     assert.deepEqual(result, [1, 'word', 'word1']);
   });
 });
@@ -162,7 +184,7 @@ describe('isPalindrome', () => {
     assert.equal(result, false);
   });
 });
- 
+
 describe('getSumDigits', () => {
   it('564674474', () => {
     const result = getSumDigits('564674474');

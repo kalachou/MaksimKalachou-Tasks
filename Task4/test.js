@@ -64,7 +64,6 @@ describe('getFirstPrimesLessThanN', () => {
   it('10,000,000', () => {
     const result = getFirstPrimesLessThanN(10000000);
     assert.equal(result.length, 664579);
-    // assert.equal(result[result.length-1], 999983);
   });
 
   it('1,000,000,000', function getPrimesTest() {
@@ -181,6 +180,11 @@ describe('isPalindrome', () => {
 
   it('Sarah, can I see bees in a cave?', () => {
     const result = isPalindrome('Sarah, can I see bees in a cave?');
+    assert.equal(result, false);
+  });
+
+  it('Eva, can I see 5 bees in a cave?', () => {
+    const result = isPalindrome('Eva, can I see 5 bees in a cave?');
     assert.equal(result, false);
   });
 });

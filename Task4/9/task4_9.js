@@ -1,6 +1,6 @@
-module.exports = function getSumDigits(arg) {
-  return (`${arg}`)
+module.exports = function getSumDigits(input) {
+  return (`${input}`)
     .split('')
     .map(x => +x)
-    .reduce((x, y) => x + y);
+    .reduce((accumulator, current) => accumulator + current);
 };

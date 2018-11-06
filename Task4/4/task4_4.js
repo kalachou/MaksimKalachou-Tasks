@@ -1,30 +1,27 @@
-module.exports = function getTenLastDigits(n) {
-  if (n > 1000 || n < 1) throw Error('n not in range 1..1000');
-  let sumResult = 0;
-  let base; let power; let
-    powerResult;
-  const mod = 10000000000; // module
+module.exports = function getTenLastDigits(NumberToCalculateItsSum) {
+  if (NumberToCalculateItsSum > 1000
+    || NumberToCalculateItsSum < 1) {
+    throw Error('n not in range 1..1000');
+  }
 
-  for (let i = 1; i < n + 1; i++) {
+  let sumResult = 0;
+  let base;
+  let power;
+  let powerResult;
+  const MODULE = 10000000000; // module
+
+  for (let i = 1; i < NumberToCalculateItsSum + 1; i++) {
     base = i;
     power = i;
     powerResult = 1;
 
-    base %= mod;
+    base %= MODULE;
     for (let j = 1; j < power + 1; j++) {
-      powerResult = (powerResult * base) % mod;
+      powerResult = (powerResult * base) % MODULE;
     }
     sumResult += powerResult;
-    sumResult %= mod;
+    sumResult %= MODULE;
   }
-  /* return String value with initial zeroes
-    if (n > 9) {
-        let arr = [];
-        arr.fill('0');
-        (sumResult+'').split('').reverse().forEach((v, i) => arr[i] = v);
-        return arr.reverse().join('');
-    }
-    return sumResult+'';
-*/
+
   return sumResult;
 };

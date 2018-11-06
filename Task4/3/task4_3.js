@@ -1,10 +1,10 @@
-module.exports = function getSumFirstEvenFibonacci(n) {
+module.exports = function getSumFirstEvenFibonacci(NumberOfEventFibonacci) {
   let first = 1;
   let second = 1;
   let temp;
   const list = [];
 
-  while (list.length < n) {
+  while (list.length < NumberOfEventFibonacci) {
     temp = first;
     first = second;
     second += temp;

@@ -1,5 +1,5 @@
 function Animal (name, age, weight, speed, limitDistance, sleepSound) {
-    this.name = name || "John Dow";
+    this.name = name || "John Doe";
     this.age = age || 0;
     this.weight = weight || 10;
     this.speed = speed || 30;
@@ -51,7 +51,7 @@ function Animal (name, age, weight, speed, limitDistance, sleepSound) {
 }
 
 function Cat (...args) {
-    args[0] = args[0] || "John Cat Dow";
+    args[0] = args[0] || "John Cat Doe";
     args[1] = args[1] || 0;
     args[2] = args[2] || 8;
     args[3] = args[3] || 20;
@@ -62,7 +62,7 @@ function Cat (...args) {
 }
 
 function Frog (...args) {
-    args[0] = args[0] || "John Frog Dow";
+    args[0] = args[0] || "John Frog Doe";
     args[1] = args[1] || 0;
     args[2] = args[2] || 0.5;
     args[3] = args[3] || 5;
@@ -73,7 +73,7 @@ function Frog (...args) {
 }
 
 function Snake (...args) {
-    args[0] = args[0] || "John Snake Dow";
+    args[0] = args[0] || "John Snake Doe";
     args[1] = args[1] || 0;
     args[2] = args[2] || 3;
     args[3] = args[3] || 2;

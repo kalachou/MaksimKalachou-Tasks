@@ -1,6 +1,6 @@
-module.exports = function getFirstPrimesLessThanN(n) {
-  const squareRootN = Math.ceil(Math.sqrt(n));// +1 for cases <= to use < instead
-  const isPrime = new Uint8Array(n);
+module.exports = function getFirstPrimesLessThanN(limit) {
+  const squareRootN = Math.ceil(Math.sqrt(limit));// +1 for cases <= to use < instead
+  const isPrime = new Uint8Array(limit);
   let i2 = 0;
   let j2;
   let num;
@@ -51,6 +51,6 @@ isPrime[3] = 1;
   return isPrime.reduce((previous, current, index) => {
     if (!!current
           && (index === 3 || index % 3 !== 0)
-          && (index === 5 || index % 5 !== 0)) previous.push(i); return previous;
+          && (index === 5 || index % 5 !== 0)) previous.push(index); return previous;
   }, []);
 };

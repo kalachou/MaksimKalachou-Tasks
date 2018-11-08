@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.calendar {
+    width: 300px;
+    border: 3px solid red;
+}
+
+.calendar__year {
+
+}
+
+.calendar__month {
+
+}
+
+.calendar__days-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days-container__day {
+    width: calc(100% / 7);
+    border: 1px solid gray;
+}
+
+.days-container__day_other-month {
+    background-color: gray;
+    color: rgb(56, 53, 53);
+}
+
+.days-container__day_current {
+    border-color: red;
+}
+
+.days-container__day_active {
+    background-color: blue;
+}

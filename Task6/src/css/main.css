@@ -2,9 +2,27 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    height: 100vh;
+}
+
+i.fa:hover {
+    color: rgb(54, 98, 194);;
+    cursor: pointer;
+}
+
 .calendar {
     width: 300px;
-    border: 3px solid red;
+    border: 3px solid rgb(54, 98, 194);
+    margin: auto;
+}
+
+.calendar__time-navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .calendar__year {
@@ -15,6 +33,13 @@
 
 }
 
+.calendar__days-of-week {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgb(54, 98, 194);
+}
+
 .calendar__days-container {
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +48,20 @@
 .days-container__day {
     width: calc(100% / 7);
     border: 1px solid gray;
+}
+
+.days-container__day:hover {
+    background-color: rgb(177, 202, 255);
+    cursor: pointer;
+}
+
+.days-container__day_name {
+    border-color: rgb(54, 98, 194);
+}
+
+.days-container__day_name:hover {
+    cursor: default;
+    background-color: inherit;
 }
 
 .days-container__day_other-month {

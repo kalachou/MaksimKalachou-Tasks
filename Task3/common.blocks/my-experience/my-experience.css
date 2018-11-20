@@ -1,0 +1,40 @@
+.my-experience__info-aside {
+    overflow: hidden;
+}
+
+.my-experience-info-aside__image {
+    width: auto;
+    height: 100%;
+}
+
+.my-experience__info {
+    background-color: #e9714c;
+    padding: 3% 0 1.7% 4%;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.my-experience__headline {
+    font-size: 2.2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 4px 0 25px 0;
+    text-transform: capitalize;
+}
+
+.my-experience__my-experience-item {
+    list-style-type: none;
+    margin-bottom: 19px;
+    padding-top: 1rem;
+}
+
+.my-experience-item__description {
+    line-height: 1.5rem;
+}
+
+.my-experience__list {
+   margin: 42px 0 0 0;
+   width: 80%;
+   position: relative;
+   left: 5%;
+}

@@ -1,0 +1,22 @@
+.testimonial__education {
+        /* justify-content: right; */
+    /* display: flex; */
+    /* flex-direction: column; */
+        /* width: 47.9%; */
+}
+
+.testimonial__image-wrapper {
+    overflow: hidden;
+}
+
+.testimonial-image-wrapper__image {
+    height: 100%;
+    width: auto;
+}
+
+.testimonial__proin {
+    width: 100%;
+    min-height: 480px;
+    padding: 6.5% 0 0 0;
+}
+

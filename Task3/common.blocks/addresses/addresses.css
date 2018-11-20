@@ -1,0 +1,18 @@
+.addresses__paragraph {
+    margin: 25px 0 54px 0;
+    letter-spacing: -0.8px;
+}
+
+.addresses__paragraph_color {
+    color: #777f72;
+}
+
+.addresses__paragraph_color2 {
+    color: #8f6b39;
+}
+
+.addresses__links {
+    text-decoration: none;
+    margin-top: 22px;
+    letter-spacing: 0.3px;
+}

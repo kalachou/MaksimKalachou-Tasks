@@ -1,0 +1,16 @@
+.main-header__photo {
+    background: url('../../img/home-img.jpg') no-repeat -343px -30px;
+    background-size: auto 90vw;
+}
+
+.photo__headline {
+    margin: 12% 0 0 23%;
+    width: 10%;
+    text-shadow: 2px 2px 1px white;
+    font-weight: bold;
+}
+
+.main-header__main-home {
+    background-color:#f0e2d7;
+    text-align: left;
+}

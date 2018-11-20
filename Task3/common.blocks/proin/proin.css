@@ -1,0 +1,21 @@
+.proin {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                  rgba(13, 24, 26, 0.6)), url("../../img/quotes-bg.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.97);
+}
+
+.proin__text {
+    font-size: 2.4rem;
+    font-weight: 200;
+    line-height: 3rem;
+    margin-top: -20px;
+    letter-spacing: -0.2px;
+    word-spacing: -0.3px;
+}
+
+.proin__note {
+    font-size:1rem;
+    margin-top: 3rem;
+}

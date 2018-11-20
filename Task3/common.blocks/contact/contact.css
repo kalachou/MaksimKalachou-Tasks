@@ -1,0 +1,18 @@
+.contact__form {
+    background-color: #e9714c;
+}
+
+.contact__addresses {
+    background-color: #161616;
+    font-size: 1rem;
+}
+
+.contact__image-wrapper {
+    overflow: hidden;
+}
+
+.contact-image-wrapper__image {
+    overflow:  hidden;
+    height: 100%;
+    width: auto;
+ }

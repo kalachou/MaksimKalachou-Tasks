@@ -1,0 +1,30 @@
+.education {
+    background-color: #e4ae58;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.education__headline {
+    font-size: 2.2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 4px 0 25px 0;
+    text-transform: capitalize;
+}
+
+.education__education-item {
+    list-style-type: none;
+    margin-bottom: 19px;
+    padding-top: 1rem;
+}
+
+.education-item__description {
+    line-height: 1.5rem;
+}
+
+.education__list {
+   margin: 42px 0 0 0;
+   width: 80%;
+   position: relative;
+   left: 5%;
+}

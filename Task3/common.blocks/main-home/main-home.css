@@ -1,0 +1,28 @@
+.main-home__greeting {
+    margin-top: 25px;
+    margin-bottom: 21px;
+    letter-spacing: -2.2px;
+}
+
+.main-home__paragraph {
+    font-size: 1rem;
+    color: #695b5b;
+    line-height: 1.8rem;
+    letter-spacing: -0.32px;
+}
+
+
+.main-home__get-started-button {
+    border: #242a26 solid 3px;
+    border-radius: 30px;
+    color: #292a24;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 3%;
+    outline: none;
+    margin: 51px 0 -5px 0;
+    height: 3.1rem;
+    min-width: 26%;
+    line-height: 0.5rem;
+}

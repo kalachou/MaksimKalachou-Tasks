@@ -1,0 +1,55 @@
+.about__small-sections_interface-design {
+    background-color: #e4ae58;
+}
+
+.about__small-sections_media-strategy {
+    background-color: #e9714c;
+}
+
+.about__small-sections_media-strategy .fa-inverse {
+    color: #e9714c;
+}
+
+.about__small-sections_mobile-app {
+    background-color: #161616;
+}
+
+.about__small-sections_coding {
+    background-color: #ffffff;
+}
+
+.about__small-sections {
+    text-align: center;
+    padding: 0.5% 2% 1.2% 3%;
+    min-height: 350px;
+    /* min-width: 320px; */
+}
+
+.about__small-sections:last-of-type {
+    color: black;
+}
+
+.about__small-sections_image {
+    background: url('../../img/about-img.jpg') no-repeat -525px -30px;
+}
+
+.about__small-sections_my_skills {
+    background-color: #e4ae58;
+    text-align: left;
+}
+
+.my-skills__headline {
+    letter-spacing: -2.5px;
+    margin-bottom: 0;
+}
+
+.my-skills__description {
+    font-size: 1rem;
+    margin: 23px 0 36px 0;
+    word-spacing: -2px;
+    letter-spacing: -0.3px;
+}
+
+.about__curriculum {
+    background-color: #ffffff;
+}

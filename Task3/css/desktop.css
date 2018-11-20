@@ -1,84 +1,91 @@
-body {
+.body {
     font-size: 24px;
 }
 
-.main_wrapper {
+.body__main-wrapper {
     max-width: 1480px;
-    margin-top: -7%;
+    margin-top: -55px;
 }
 
-.main-navigation {
-    
-}
-
-.sections {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-}
-
-.main-header {
-   
+.main-wrapper__main-navigation {
+ width: 50%;
 }
 
 .main-home__aside {
 
 }
 
-.home_aside {
-    background: url(../img/home-img.jpg) no-repeat;
-    background-size: auto 56vw;
+.main-header__photo {
+    background-size: auto 100%;
     width: 50%;
-    height: 56vw;
     background-position: center;
 }
 
 .main-home {
     width: 50%;
-    height: 56vw;
-    padding: 8%;
+    padding: 16% 2% 17% 3%;
 }
 
 .about__curriculum {
     width: 50%;
+    padding: 0.6% 2%;
 }
 
-.about__small-sections {
-    width: 25%;
+.about__small-sections_image {
+    background: url('../img/about-img.jpg') no-repeat -525px -30px;
+    width: 25.6%;
+}
+
+.about__small-sections_my_skills {
+    width: 24.4%;
+}
+
+.about__small-sections_interface-design {
+    width: 24.5%;
+}
+
+.about__small-sections_media-strategy {
+    width: 25.5%;
+}
+
+.about__small-sections_mobile-app {
+    width: 25.6%;
+}
+
+.about__small-sections_coding {
+    width: 24.4%;
 }
 
 .my-experience__info-aside {
     width: 50%;
-    height: 350px;
 }
 
 .my-experience__info {
     width: 50%;
 }
 
-.education {
+.testimonial__education {
     width: 50%;
-    padding: 4%;
+    padding: 3% 0 2.3% 3%;
 }
 
-.education__aside {
-    width:50%;
+.testimonial__image-wrapper {
+    width: 50%;
     max-height: 632px;
-    margin-bottom: -300px;
-    /* overflow:  hidden; */
 }
 
 .contact__form {
-    height: 620px;
+    font-weight: lighter;
     width: 50%;
-    padding:  5%;
+    padding: 0 4% 0 2%;
     font-size: 2rem;
 }
 
 .contact__addresses {
-    width:25%;
+    width: 24.5%;
+    padding: 56px 0 0 46px;
 }
 
-.addresses__aside {
-    width: 25%;
+.contact__image-wrapper {
+    width: 25.5%;
 }

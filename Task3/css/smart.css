@@ -3,21 +3,27 @@ html {
     font-size: 24px;
 }
 
-.main_wrapper {
+.main-navigation_desktop {
+    display: none;
+}
+
+.main-navigation_burger {
+    display: unset;
+}
+
+.body__main-wrapper {
     min-width: 305px;
 }
 
-.sections {
-    display: flex;
+.main-wrapper__section {
     flex-direction: column;
-    flex-wrap: wrap; 
 }
 
 .main-home__aside {
     width: 100%;
 }
 
-.home_aside {
+.main-header__photo {
     min-width: 305px;
     height: 60vw;
     background: url(../img/home-img.jpg) no-repeat;
@@ -29,33 +35,34 @@ html {
     padding: 3%;
 }
 
+.my-experience__my-experience-item .fa-li,
+.education__education-item .fa-li {
+    left: -1.6em;
+}
+
 .my-experience__info-aside {
     margin-bottom: -6px;
 }
 
-.my-experience__info-aside img {
+.my-experience-info-aside__image {
     width: 100%;
 }
 
-.about__curriculum {
-    padding-top: 45%;
-}
-
 .education {
-    padding: 25vh 5% 5%;
+    padding: 0 5% 5%;
 }
 
-.education__aside {
+.testimonial__image-wrapper {
     margin-bottom: -6px;
 }
 
-.education__aside img {
+.testimonial-image-wrapper__image {
     width: 100%;
     height: auto;
 }
 
-.proin {
-    padding-top: 45%;
+.proin__text {
+    font-size: 1.5rem;
 }
 
 .contact {
@@ -63,7 +70,6 @@ html {
 }
 
 .contact__form {
-    padding-top: 25vh;
     padding-bottom: 10%;
 }
 
@@ -71,11 +77,11 @@ html {
     padding: 5%;
 }
 
-.addresses__aside {
-    max-width: 305px;
+.contact__image-wrapper {
     margin: 0 auto;
 }
 
-.addresses__aside__image {
-    margin: -90px -145px -498px -556px;
+.contact-image-wrapper__image {
+    width: 100%;
+    height: auto;
 }

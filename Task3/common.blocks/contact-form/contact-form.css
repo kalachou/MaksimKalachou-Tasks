@@ -1,0 +1,53 @@
+.contact-form__headline {
+    font-weight: lighter;
+    letter-spacing: -2.3px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    word-spacing: -2px;
+}
+
+.contact-form__text {
+    font-size: 1rem;
+    letter-spacing: -0.4px;
+    margin-bottom: 24px;
+}
+
+.contact-form__input {
+    background-color: #e9714c;
+    border: 0;
+    border-bottom: #e4ae58 1px solid;
+    color: white;
+    font-size: 1rem;
+    height: 4.4rem;
+    width: 100%;
+    padding: 28px 0 0 15px;
+}
+
+.contact-form__input::-webkit-input-placeholder {
+    color:white;
+}
+
+.contact-form__input::-moz-placeholder {
+    color:white;
+}
+
+.contact-form__input_text-area {
+    height: 12rem;
+    padding-top: 35px;
+}
+
+.contact-form__send-input {
+    width: 46%;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: white;
+    border: 0;
+    outline: none;
+    margin: 18px;
+    font-size: 1rem;
+}
+
+.contact-form__send-input:hover {
+    background-color: #e4ae58;
+    cursor: pointer;
+}

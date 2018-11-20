@@ -1,0 +1,21 @@
+.curriculum__headline {
+    color: #2a2e2d;
+    font-weight: lighter;
+    letter-spacing: -1.8px;
+    margin-bottom: 0;
+}
+
+.curriculum__description {
+    color: #e5cf7c;
+    font-size: 1rem;
+    letter-spacing: -0.8px;
+    margin: 21px 0 40px 0;
+}
+
+.curriculum__text {
+    color: #9a9995;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    letter-spacing: -0.45px;
+    margin-bottom: 12px;
+}

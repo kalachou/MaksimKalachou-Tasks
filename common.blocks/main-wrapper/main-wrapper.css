@@ -1,0 +1,10 @@
+.main-wrapper__footer {
+    height: 10vw;
+}
+
+.main-wrapper__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

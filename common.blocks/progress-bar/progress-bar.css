@@ -1,0 +1,37 @@
+.progress-bar {
+    background-color: white;
+    clear:both;
+    margin-bottom: 2rem;
+}
+
+.progress-bar__progress {
+    height: 2px;
+    background-color: black;
+}
+
+.progress-bar__label {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    float:  left;
+    letter-spacing: -2px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+}
+
+.progress-bar__value {
+    font-size: 1rem;
+    float: right;
+}
+
+.progress-bar__progress_frontend {
+    width: 90%;
+}
+
+.progress-bar__progress_backend{
+    width: 70%;
+}
+
+.progress-bar__progress_html {
+    width: 80%;
+}

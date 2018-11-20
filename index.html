@@ -1,197 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1025px)" />
-    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 769px) and (max-width:1024px)" />
-    <link rel="stylesheet" href="css/tablets.css" media="(min-width: 601px) and (max-width:768px)" />
-    <link rel="stylesheet" href="css/tablets.css" media="(min-width: 481px) and (max-width:600px)" />
-    <link rel="stylesheet" href="css/smart.css" media="(min-width: 321px) and (max-width:480px)" />
-    <link rel="stylesheet" href="css/smart.css" media="(max-width:320px)" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./common.blocks/body/body.css">
+    <link rel="stylesheet" href="./common.blocks/main-footer/main-footer.css">
+    <link rel="stylesheet" href="./common.blocks/main-wrapper/main-wrapper.css">
+    <link rel="stylesheet" href="./common.blocks/contact/contact.css">
+    <link rel="stylesheet" href="./common.blocks/contact-form/contact-form.css">
+    <link rel="stylesheet" href="./common.blocks/testimonial/testimonial.css">
+    <link rel="stylesheet" href="./common.blocks/education/education.css">
+    <link rel="stylesheet" href="./common.blocks/addresses/addresses.css">
+    <link rel="stylesheet" href="./common.blocks/proin/proin.css">
+    <link rel="stylesheet" href="./common.blocks/my-experience/my-experience.css">
+    <link rel="stylesheet" href="./common.blocks/curriculum/curriculum.css">
+    <link rel="stylesheet" href="./common.blocks/progress-bar/progress-bar.css">
+    <link rel="stylesheet" href="./common.blocks/about/about.css">
+    <link rel="stylesheet" href="./common.blocks/main-header/main-header.css">
+    <link rel="stylesheet" href="./common.blocks/main-navigation/main-navigation.css">
+    <link rel="stylesheet" href="./common.blocks/main-home/main-home.css">
+    <link rel="stylesheet" href="./common.blocks/skills/skills.css">
+    <link rel="stylesheet" href="./common.blocks/date/date.css">
+
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1025px)">
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 769px) and (max-width:1024px)">
+    <link rel="stylesheet" href="css/tablets.css" media="(min-width: 601px) and (max-width:768px)">
+    <link rel="stylesheet" href="css/tablets.css" media="(min-width: 481px) and (max-width:600px)">
+    <link rel="stylesheet" href="css/smart.css" media="(min-width: 321px) and (max-width:480px)">
+    <link rel="stylesheet" href="css/smart.css" media="(max-width:320px)">
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <div class="main_wrapper">
-        <nav class="main-navigation">
-            <a href="#home"><div>home</div></a>
-            <a href="#about"><div>about me</div></a>
-            <a href="#eperiences"><div>experiences</div></a>
-            <a href="#testimonial"><div>testimonial</div></a>
-            <a href="#contact"><div>contact</div></a>
+
+<body class="body">
+    <div class="main-wrapper body__main-wrapper">
+        <nav class="main-navigation main-navigation_desktop main-wrapper__main-navigation">
+            <a class="main-navigation__item" href="#home">
+                <div>home</div>
+            </a>
+            <a class="main-navigation__item" href="#about">
+                <div>about me</div>
+            </a>
+            <a class="main-navigation__item" href="#eperiences">
+                <div>experiences</div>
+            </a>
+            <a class="main-navigation__item" href="#testimonial">
+                <div>testimonial</div>
+            </a>
+            <a class="main-navigation__item" href="#contact">
+                <div>contact</div>
+            </a>
         </nav>
-    <header class="sections main-header" id="home">
-        <aside class="home_aside">
-                <h4>Stimulus</h4>
-        </aside>
-        <article class="main-home">
 
-            <h1>welcome to my website</h1>
-            <h2>Hello, I am <b>Stimulus</b> currently based in New York city.</h2>
-            <p class="main-home__paragraph">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum <br>
-                in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id <br>
-                accumsan quam. 
-            </p>
-            <a href="#about"><button class="main-home__get-started-button">get started</button></a>
-        </article>
-
-    </header>
-    <main class="main-main">
-        <section class="sections about" id="about">
-            <article class="about__curriculum">
-                <h2>Donec auctor</h2>
-                <p>Sed vulpuate vitae diam quis bibendum </p>
-                <p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, <br>
-                faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa. <p>
-                <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, <br>
-                quis porta odio odio at velit. </p>
-            </article>
-            <aside class="about__small-sections my_skills_aside">
-            </aside>
-            <article class="about__small-sections my_skills">
-                <h2>My Skills</h2>
-                <span>Photoshop</span> . <span>CSS JS</span>  . <span>Design</span> 
-                <div>
-                    <span class="progress-bar__label">Frontend Design</span>
-                    <span class="progress-bar__value">90%</span>
-                    <div class="progress-bar">
-                        <div class="progress-bar__progress progress-bar__progress_frontend"></div>
-                    </div>
-                </div>
-                <div>
-                    <span class="progress-bar__label">Backend processing</span>
-                    <span class="progress-bar__value">70%</span>
-                    <div class="progress-bar">
-                        <div class="progress-bar__progress progress-bar__progress_backend"></div>
-                    </div>
-                </div>
-                <div>
-                    <span class="progress-bar__label">HTML5 & CSS3</span>
-                    <span class="progress-bar__value">80%</span>
-                    <div class="progress-bar">
-                        <div class="progress-bar__progress progress-bar__progress_html"></div>
-                    </div>
-                </div>
-            </article>
-            <article class="about__small-sections about__interface-design">
-                <h2><i class="fa fa-desktop" aria-hidden="true"></i></h2>
-                <h3>Interface Design</h3> 
-                Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. 
-            </article>
-            <article class="about__small-sections about__media-strategy">
-                <h2>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-1x"></i>
-                        <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
-                    </span>
-                </h2>
-                <h3>Media Strategy</h3>
-                Curabitur at pulvinar ante. Duis dui urna, faucibus eget fens eu, iaculis congue sem. 
-            </article>
-            <article class="about__small-sections about__mobile-app">
-                <h2><i class="fa fa-table" aria-hidden="true"></i></h2>
-                <h3>Mobile App</h3>
-                    Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.
-            </article>
-            <article class="about__small-sections about__coding">
-                <h2><i class="fa fa-html5" aria-hidden="true"></i></h2>
-                <h3>Coding</h3>
-                    Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis. 
-            </article>
-
-
-        </section>
-
-        <section class="sections my-experience" id="eperiences">
-            <aside class="my-experience__info-aside">
-                <img src="img/experience-img.jpg" alt="experience-img.jpg">
-            </aside>
-            <article class="my-experience__info">
-                <h2>my experiences</h2>
-            Previous companies and my tasks
-            <ul>
-                <i class="fa fa-laptop fa-3x" aria-hidden="true"></i><i>
-                    Graphic Designer <span class="date">2014 Jul - 2015 Sep</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                </i><br>
-                <i class="fa fa-laptop fa-3x" aria-hidden="true"></i><i>
-                    Web Designer <span class="date">2015 Oct - 2017 Jan</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                </i>
+        <nav class="main-navigation main-navigation_burger">
+            <input class="main-navigation__check" type="checkbox" id="showmenu" />
+            <label class="main-navigation__showmenu" for="showmenu">&#9776;</label>
+            <label class="main-navigation__back" for="showmenu"></label>
+            <ul class="menu">
+                <li><a class="main-navigation__item menu__item" href="#home">home</a></li>
+                <li><a class="main-navigation__item menu__item" href="#about">about me</a></li>
+                <li><a class="main-navigation__item menu__item" href="#eperiences">experiences</a></li>
+                <li><a class="main-navigation__item menu__item" href="#testimonial">testimonial</a></li>
+                <li><a class="main-navigation__item menu__item" href="#contact">contact</a></li>
             </ul>
-            </article>
+        </nav>
 
-        </section>
-
-        <section class="sections" id="testimonial">
-            <article class="education">
-            <h3>My Education</h3>
-            In cursus orci non ipsum gravida dignissim 
-            <ul>
-                <li><i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
-                        Master  in Design <span class="date">2012 Jan - 2014 May</span>
-                        Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper<br>
-                        dignissim eu in neque.
-
-                
-                <li><i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
-                    Bachelor of Arts <span class="date">2008 May - 2011 Dec</span>
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus<br>
-                    mus.                
-            </ul>
-            </article>
-            <aside class="education__aside">
-                <img src="img/education-img.jpg" alt="education-img.jpg">
+        <header class="main-header main-wrapper__section" id="home">
+            <aside class="main-header__photo">
+                <h4 class="photo__headline">Stimulus</h4>
             </aside>
-            <article class="proin">
-            <i class="fa fa-star fa-3x fa-inverse" aria-hidden="true"></i><br>
-            Proin lobortis eu diam et facilisis. Fusce nisi nibh, <br>
-            molestie in vestibulum quis, auctor et orci. 
-            <p>Curabitur at pulvinar ante. Duis dui urna, faucibus egAis eu, iaculis congue sem. </p>
-            </article>
-        </section>
+            <article class="main-home main-header__main-home">
 
-        <section class="sections contact" id="contact">
-            <form class="contact__form" action="">
-                    <h2>Say hello..</h2>
-                    <p>Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
-                    <input class="form__inputs" type="text" placeholder="Your Name">
-                    <input class="form__inputs" type="email" placeholder="Your Email">
-                    <textarea  class="form__inputs" placeholder="Write your message... "></textarea><br>
-                    <input class="form__send-input" type="submit" value="Send">
-            </form>
-            <aside class="addresses__aside">
-                <img class="addresses__aside__image" src="img/contact-img.jpg" alt="contact-img.jpg">
-            </aside>
-            <article class="contact__addresses">
+                <h1>welcome to my website</h1>
+                <h2 class="main-home__greeting">Hello, I am <b>Stimulus</b> currently based in New York city.</h2>
+                <p class="main-home__paragraph">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur
+                    ipsum, et mattis tellus interdum
+                    in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id
+                    accumsan quam.
+                </p>
+                <a href="#about"><button class="main-home__get-started-button">get started</button></a>
+            </article>
+
+        </header>
+        <main>
+            <section class="about main-wrapper__section" id="about">
+                <article class="curriculum about__curriculum">
+                    <h2 class="curriculum__headline">Donec auctor</h2>
+                    <p class="curriculum__description">Sed vulpuate vitae diam quis bibendum </p>
+                    <p class="curriculum__text">Phasellus vulputate tellus nec tortor varius elementum. Curabitur at
+                        pulvinar ante. Duis dui
+                        urna,
+                        faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa. </p>
+                    <p>
+                    </p>
+                    <p class="curriculum__text">Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam
+                        bibendum, sem nibh mollis
+                        erat,
+                        quis porta odio odio at velit. </p>
+                </article>
+                <aside class="about__small-sections about__small-sections_image">
+                </aside>
+                <article class="skills about__small-sections about__small-sections_my_skills">
+                    <h2 class="my-skills__headline">My Skills</h2>
+                    <h3 class="my-skills__description"><span>Photoshop</span> . <span>HTML CSS JS</span> . <span>Web
+                            Design</span></h3>
+                    <div>
+                        <span class="progress-bar__label">Frontend Design</span>
+                        <span class="progress-bar__value">90%</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar__progress progress-bar__progress_frontend"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="progress-bar__label">Backend processing</span>
+                        <span class="progress-bar__value">70%</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar__progress progress-bar__progress_backend"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="progress-bar__label">HTML5 &amp; CSS3</span>
+                        <span class="progress-bar__value">80%</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar__progress progress-bar__progress_html"></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="skills about__small-sections about__small-sections_interface-design">
+                    <h2 class="skills__headline"><i class="fa fa-desktop" aria-hidden="true"></i></h2>
+                    <h3>Interface Design</h3>
+                    <p class="skills__paragraph">Phasellus vulputate tellus nec tortor varius elementum.
+                        Curabitur at pulvinar ante. </p>
+                </article>
+                <article class="skills about__small-sections about__small-sections_media-strategy">
+                    <h2 class="skills__headline"><i class="fa fa-paper-plane" aria-hidden="true"></i></h2>
+                    <h3 class="skills__description">Media Strategy</h3>
+                    <p class="skills__paragraph">Curabitur at pulvinar ante. Duis dui urna, faucibus eget fens
+                        eu, iaculis congue sem. </p>
+                </article>
+                <article class="skills about__small-sections about__small-sections_mobile-app">
+                    <h2 class="skills__headline"><i class="fa fa-table" aria-hidden="true"></i></h2>
+                    <h3 class="skills__description">Mobile App</h3>
+                    <p class="skills__paragraph"> Mauris convallis eros massa, vitae euismod arcu tempus ut.
+                        Quisque viverra iaculis.</p>
+                </article>
+                <article class="skills about__small-sections about__small-sections_coding">
+                    <h2 class="skills__headline"><i class="fa fa-html5" aria-hidden="true"></i></h2>
+                    <h3 class="skills__description">Coding</h3>
+                    <p class="skills__paragraph"> Mauris convallis eros massa, vitae euismod arcu tempus ut.
+                        Quisque viverra iaculis. </p>
+                </article>
+            </section>
+
+            <section class="my-experience main-wrapper__section" id="eperiences">
+                <aside class="my-experience-info-aside my-experience__info-aside">
+                    <img class="my-experience-info-aside__image" src="img/experience-img.jpg" alt="experience-img.jpg">
+                </aside>
+                <article class="my-experience__info">
+                    <h2 class="my-experience__headline">
+                        my experiences
+                    </h2>
+                    Previous companies and my tasks
+                    <ul class="fa-ul my-experience__list">
+                        <li class="my-experience__my-experience-item ">
+                            <i class="fa-li fa fa-laptop fa-3x" aria-hidden="true"></i>
+                            <h3 class="my-experience-item__headline">
+                                Graphic Designer <span class="date">2014 Jul - 2015 Sep</span>
+                            </h3>
+                            <p class="my-experience-item__description">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit</p>
+
+                        </li>
+                        <li class="my-experience__my-experience-item">
+                            <i class="fa-li fa fa-laptop fa-3x" aria-hidden="true"></i>
+
+                            <h3 class="my-experience-item__headline">
+                                Web Designer <span class="date">2015 Oct - 2017 Jan</span>
+                            </h3>
+                            <p class="my-experience-item__description">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit</p>
+
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <section class="testimonial main-wrapper__section" id="testimonial">
+                <article class="education testimonial__education">
+                    <h2 class="education__headline">My Education</h2>
+                    In cursus orci non ipsum gravida dignissim
+                    <ul class="fa-ul education__list">
+                        <li class="education__education-item">
+                            <i class="fa-li fa fa-laptop fa-3x education-item__marker" aria-hidden="true"></i>
+                            <h3 class="education-item__headline">
+                                Master in Design <span class="date">2012 Jan - 2014 May</span>
+                            </h3>
+                            <p class="education-item__description">Etiam iaculis elit in mauris ullamcorper auctor.
+                                Proin a sapien id orci ullamcorper
+                                dignissim eu in neque.</p>
+                        </li>
+                        <li class="education__education-item">
+                            <i class="fa-li fa fa-laptop fa-3x education-item__marker" aria-hidden="true"></i>
+                            <h3 class="education-item__headline">
+                                Bachelor of Arts <span class="date">2008 May - 2011 Dec</span>
+                            </h3>
+                            <p class="education-item__description">Orci varius natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus
+                                mus.</p>
+                        </li>
+                    </ul>
+                </article>
+                <aside class="testimonial__image-wrapper">
+                    <img class="testimonial-image-wrapper__image" src="img/education-img.jpg" alt="education-img.jpg">
+                </aside>
+                <article class="proin testimonial__proin">
+                    <h2> <i class="fa fa-star fa-inverse" aria-hidden="true"></i></h2>
+                    <p class="proin__text">Proin lobortis eu diam et facilisis. Fusce nisi nibh, <br>
+                        molestie in vestibulum quis, auctor et orci.
+                    </p>
+                    <p class="proin__note">Curabitur at pulvinar ante. Duis dui urna, faucibus egAis eu, iaculis congue
+                        sem. </p>
+                </article>
+            </section>
+
+            <section class="contact main-wrapper__section" id="contact">
+                <form class="contact-form contact__form" action="">
+                    <h2 class="contact-form__headline">Say hello..</h2>
+                    <p class="contact-form__text">Integer ut consectetur est. In cursus orci non ipsum gravida
+                        dignissim.</p>
+                    <input class="contact-form__input" type="text" placeholder="Your Name">
+                    <input class="contact-form__input" type="email" placeholder="Your Email">
+                    <textarea class="contact-form__input contact-form__input_text-area" placeholder="Write your message... "></textarea><br>
+                    <input class="contact-form__send-input" type="submit" value="Send">
+                </form>
+                <aside class="contact-image-wrapper contact__image-wrapper">
+                    <img class="contact-image-wrapper__image" src="img/contact-img.jpg" alt="contact-img.jpg">
+                </aside>
+                <article class="addresses contact__addresses">
                     <h3>Visit my office</h3>
-                    <p class="addresses__paragraph_silver">
-                    456 New Street 22000, New York City, USA <br>
+                    <p class="addresses__paragraph addresses__paragraph_color">
+                        456 New Street 22000, New York City, USA <br>
                     </p>
                     <h3>Contact.</h3>
-                    <p class="addresses__paragraph_silver"><i class="fa fa-phone" aria-hidden="true"><a href="tel:+01-0110-0220 12"> 01-0110-0220 12</a>  </i></p>                    
-                    <p><i class="fa fa-envelope-o addresses__paragraph_silver" aria-hidden="true"><a class="addresses__paragraph_gold" href="mailto:hello@company.co"> hello@company.co</a>  </i></p>
-                    <p><i class="fa fa-globe addresses__paragraph_silver" aria-hidden="true"><a class="addresses__paragraph_gold" href="http://company.co"> company.co</a> </i> </p>
-            </article>
+                    <p class="addresses__links addresses__paragraph_color">
+                        <i class="fa fa-phone" aria-hidden="true">
+                            &nbsp;<a href="tel:+01-0110-0220 12">
+                                01-0110-0220</a> </i>
+                    </p>
+                    <p class="addresses__links">
+                        <i class="fa fa-envelope-o addresses__paragraph_color" aria-hidden="true">
+                            &nbsp;<a class="addresses__paragraph_color2" href="mailto:hello@company.co">
+                                hello@company.co</a>
+                        </i>
+                    </p>
+                    <p class="addresses__links">
+                        <i class="fa fa-globe addresses__paragraph_color" aria-hidden="true">
+                            &nbsp;<a class="addresses__paragraph_color2" href="http://company.co"> company.co</a>
+                        </i>
+                    </p>
+                </article>
 
-        </section>
+            </section>
 
-    </main>
+        </main>
 
-    <footer class="main_footer">
-        Copiright &copy; 2016 Your Company | Design: <a href="http://">templatemo</a><br>
+        <footer class="main-footer main-wrapper__footer">
+            Copiright © 2016 Your Company | Design: <a href="http://">templatemo</a><br>
 
-        <a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="http://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-        <a href="http://dribbble.com"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-        <a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="http://facebook.com"><i class="fa fa-facebook main-footer__social-icons" aria-hidden="true"></i></a>
+            <a href="http://twitter.com"><i class="fa fa-twitter main-footer__social-icons" aria-hidden="true"></i></a>
+            <a href="http://plus.google.com"><i class="fa fa-google-plus main-footer__social-icons" aria-hidden="true"></i></a>
+            <a href="http://dribbble.com"><i class="fa fa-dribbble main-footer__social-icons" aria-hidden="true"></i></a>
+            <a href="http://linkedin.com"><i class="fa fa-linkedin main-footer__social-icons" aria-hidden="true"></i></a>
 
 
-    </footer>
+        </footer>
     </div>
 </body>

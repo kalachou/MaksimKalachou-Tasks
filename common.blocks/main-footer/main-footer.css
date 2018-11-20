@@ -1,0 +1,11 @@
+.main-footer {
+    text-align: center;
+    padding: 10%;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    word-spacing: -0.8px;
+}
+
+.main-footer__social-icons {
+    margin: 55px  21px 0;
+}

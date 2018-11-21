@@ -20,8 +20,8 @@
 
 .about__small-sections {
     text-align: center;
-    padding: 0.5% 2% 1.2% 3%;
-    min-height: 350px;
+    padding: 0.5% 2% 0.7% 3%;
+    /* min-height: 344px; */
     /* min-width: 320px; */
 }
 
@@ -30,7 +30,8 @@
 }
 
 .about__small-sections_image {
-    background: url('../../img/about-img.jpg') no-repeat -525px -30px;
+    background: url('../../img/about-img.jpg') no-repeat center;
+    min-height: 344px;
 }
 
 .about__small-sections_my_skills {
@@ -45,7 +46,7 @@
 
 .my-skills__description {
     font-size: 1rem;
-    margin: 23px 0 36px 0;
+    margin: 23px 0 42px 0;
     word-spacing: -2px;
     letter-spacing: -0.3px;
 }

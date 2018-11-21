@@ -1,7 +1,7 @@
 .progress-bar {
     background-color: white;
     clear:both;
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
 }
 
 .progress-bar__progress {
@@ -16,11 +16,11 @@
     float:  left;
     letter-spacing: -2px;
     margin-left: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .progress-bar__value {
-    font-size: 1rem;
+    font-size: 0.8rem;
     float: right;
 }
 

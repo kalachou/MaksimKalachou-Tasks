@@ -9,6 +9,9 @@
 
 .contact__image-wrapper {
     overflow: hidden;
+    background-image: url('../../img/contact-img.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-image-wrapper__image {

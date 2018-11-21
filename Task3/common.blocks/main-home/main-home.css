@@ -2,6 +2,7 @@
     margin-top: 25px;
     margin-bottom: 21px;
     letter-spacing: -2.2px;
+    font-weight: 300;
 }
 
 .main-home__paragraph {
@@ -25,4 +26,9 @@
     height: 3.1rem;
     min-width: 26%;
     line-height: 0.5rem;
+}
+
+.main-home__get-started-button:hover {
+    background-color: #e3ae7a;
+    cursor: pointer;
 }

@@ -1,5 +1,8 @@
 .my-experience__info-aside {
     overflow: hidden;
+    background-image: url(../../img/experience-img.jpg);
+    background-size: cover;
+    min-height: 385px;
 }
 
 .my-experience-info-aside__image {
@@ -24,7 +27,7 @@
 
 .my-experience__my-experience-item {
     list-style-type: none;
-    margin-bottom: 19px;
+    margin-bottom: 12px;
     padding-top: 1rem;
 }
 

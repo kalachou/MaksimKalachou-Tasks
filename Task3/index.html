@@ -28,47 +28,31 @@
     <link rel="stylesheet" href="./common.blocks/skills/skills.css">
     <link rel="stylesheet" href="./common.blocks/date/date.css">
 
-    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1025px)">
-    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 769px) and (max-width:1024px)">
-    <link rel="stylesheet" href="css/tablets.css" media="(min-width: 601px) and (max-width:768px)">
-    <link rel="stylesheet" href="css/tablets.css" media="(min-width: 481px) and (max-width:600px)">
-    <link rel="stylesheet" href="css/smart.css" media="(min-width: 321px) and (max-width:480px)">
-    <link rel="stylesheet" href="css/smart.css" media="(max-width:320px)">
-    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./common.blocks/burger-menu/burger-menu.css" media="(max-width:800px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1025px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 769px) and (max-width:1024px)">
+    <link rel="stylesheet" href="./css/tablets.css" media="(min-width: 601px) and (max-width:768px)">
+    <link rel="stylesheet" href="./css/tablets.css" media="(min-width: 481px) and (max-width:600px)">
+    <link rel="stylesheet" href="./css/smart.css" media="(min-width: 321px) and (max-width:480px)">
+    <link rel="stylesheet" href="./css/smart.css" media="(max-width:320px)">
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="body">
     <div class="main-wrapper body__main-wrapper">
-        <nav class="main-navigation main-navigation_desktop main-wrapper__main-navigation">
-            <a class="main-navigation__item" href="#home">
-                <div>home</div>
-            </a>
-            <a class="main-navigation__item" href="#about">
-                <div>about me</div>
-            </a>
-            <a class="main-navigation__item" href="#eperiences">
-                <div>experiences</div>
-            </a>
-            <a class="main-navigation__item" href="#testimonial">
-                <div>testimonial</div>
-            </a>
-            <a class="main-navigation__item" href="#contact">
-                <div>contact</div>
-            </a>
-        </nav>
-
-        <nav class="main-navigation main-navigation_burger">
-            <input class="main-navigation__check" type="checkbox" id="showmenu" />
+        
+        <nav class="main-navigation main-wrapper__main-navigation">
+            <input class="main-navigation__check" type="checkbox" id="showmenu"/>
             <label class="main-navigation__showmenu" for="showmenu">&#9776;</label>
             <label class="main-navigation__back" for="showmenu"></label>
-            <ul class="menu">
-                <li><a class="main-navigation__item menu__item" href="#home">home</a></li>
-                <li><a class="main-navigation__item menu__item" href="#about">about me</a></li>
-                <li><a class="main-navigation__item menu__item" href="#eperiences">experiences</a></li>
-                <li><a class="main-navigation__item menu__item" href="#testimonial">testimonial</a></li>
-                <li><a class="main-navigation__item menu__item" href="#contact">contact</a></li>
+            <ul class="main-navigation__menu">
+                <li><a class="menu__item" href="#home">home</a></li>
+                <li><a class="menu__item" href="#about">about me</a></li>
+                <li><a class="menu__item" href="#eperiences">experiences</a></li>
+                <li><a class="menu__item" href="#testimonial">testimonial</a></li>
+                <li><a class="menu__item" href="#contact">contact</a></li>
             </ul>
-        </nav>
+          </nav>
 
         <header class="main-header main-wrapper__section" id="home">
             <aside class="main-header__photo">
@@ -159,7 +143,6 @@
 
             <section class="my-experience main-wrapper__section" id="eperiences">
                 <aside class="my-experience-info-aside my-experience__info-aside">
-                    <img class="my-experience-info-aside__image" src="img/experience-img.jpg" alt="experience-img.jpg">
                 </aside>
                 <article class="my-experience__info">
                     <h2 class="my-experience__headline">
@@ -241,9 +224,7 @@
                     <textarea class="contact-form__input contact-form__input_text-area" placeholder="Write your message... "></textarea><br>
                     <input class="contact-form__send-input" type="submit" value="Send">
                 </form>
-                <aside class="contact-image-wrapper contact__image-wrapper">
-                    <img class="contact-image-wrapper__image" src="img/contact-img.jpg" alt="contact-img.jpg">
-                </aside>
+                <aside class="contact-image-wrapper contact__image-wrapper"></aside>
                 <article class="addresses contact__addresses">
                     <h3>Visit my office</h3>
                     <p class="addresses__paragraph addresses__paragraph_color">

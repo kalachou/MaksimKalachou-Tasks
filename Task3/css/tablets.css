@@ -87,6 +87,8 @@
 
 .contact__image-wrapper {
     width: 50%;
+    background: url(../img/contact-img.jpg) no-repeat;
+    background-size: 100% auto;
 }
 
 .contact-image-wrapper__image {

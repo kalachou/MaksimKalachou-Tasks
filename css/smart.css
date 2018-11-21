@@ -27,6 +27,11 @@ html {
     padding: 3%;
 }
 
+.about__small-sections_image {
+    background: url(../img/about-img.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .my-experience__my-experience-item .fa-li,
 .education__education-item .fa-li {
     left: -1.6em;

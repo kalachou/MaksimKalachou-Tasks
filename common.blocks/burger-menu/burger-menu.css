@@ -57,6 +57,7 @@
 .menu__item {  
     display: block;
     color: #fff;
+    background-color: transparent;
 }
 
 .main-navigation__check:checked~.main-navigation__back {

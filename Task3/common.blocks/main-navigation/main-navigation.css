@@ -5,6 +5,7 @@
     text-transform: uppercase;
     font-size: 0.8rem;
     padding-top: 42px;
+    z-index: 3;
 }
 
 .main-navigation__menu {
@@ -19,6 +20,7 @@
     /* text-align: left; */
     text-decoration: none;
     margin: 0 31px 0 0;
+    background-color: #f0e2d7;
 }
 
 .main-navigation__item:hover {

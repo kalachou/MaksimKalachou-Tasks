@@ -7,6 +7,9 @@
 
 .testimonial__image-wrapper {
     overflow: hidden;
+    background: url(../../img/education-img.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 300px;
 }
 
 .testimonial-image-wrapper__image {
@@ -17,6 +20,6 @@
 .testimonial__proin {
     width: 100%;
     min-height: 480px;
-    padding: 6.5% 0 0 0;
+    padding: 6.5% 0 6% 0;
 }
 

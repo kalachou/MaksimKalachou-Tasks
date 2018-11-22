@@ -1,6 +1,6 @@
 html {
     overflow-y: scroll;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .body__main-wrapper {
@@ -76,9 +76,10 @@ html {
 
 .contact__image-wrapper {
     width: 100%;
-    background: url(../img/contact-img.jpg) no-repeat;
-    background-size: 100% auto;
-    height: -webkit-fill-available;
+    background: url(../img/contact-img.jpg) no-repeat center -50px;
+    background-size: cover;
+    /* height: -webkit-fill-available; */
+    min-height: 320px;
 }
 
 .contact-image-wrapper__image {

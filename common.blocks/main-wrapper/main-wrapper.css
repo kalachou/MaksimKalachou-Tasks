@@ -8,3 +8,9 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
+.main-wrapper__main-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+}

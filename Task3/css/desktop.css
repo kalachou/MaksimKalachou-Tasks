@@ -8,10 +8,11 @@
 }
 
 .main-wrapper__main-navigation {
- width: 50%;
+ /* width: fit-content; */
  padding-left: 76px;
- background-color: #f0e2d7;
- padding-bottom: 2%;
+ background-color: rgba(240, 226, 215, 0.5);
+ padding-bottom: 1%;
+ left: 50%;
 }
 
 .main-home__aside {

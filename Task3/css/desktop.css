@@ -4,7 +4,7 @@
 
 .body__main-wrapper {
     max-width: 1480px;
-    width: 1480px;
+    /* width: 1480px; */
 }
 
 .main-wrapper__main-navigation {

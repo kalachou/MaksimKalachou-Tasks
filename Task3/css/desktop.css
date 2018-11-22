@@ -4,7 +4,7 @@
 
 .body__main-wrapper {
     max-width: 1480px;
-    /* width: 1480px; */
+    width: 1480px;
 }
 
 .main-wrapper__main-navigation {
@@ -44,14 +44,18 @@
 
 .about__small-sections_interface-design {
     width: 24.5%;
+    padding-left: 1.2%;
 }
 
 .about__small-sections_media-strategy {
     width: 25.5%;
+    padding-left: 2%;
 }
 
 .about__small-sections_mobile-app {
     width: 25.6%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .about__small-sections_coding {

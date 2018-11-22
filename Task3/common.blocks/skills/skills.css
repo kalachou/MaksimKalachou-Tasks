@@ -16,3 +16,7 @@
     letter-spacing: -1px;
     margin: 0 0 52px;
 }
+
+.skills__progress-bar {
+    margin-bottom: 1.6rem;
+}

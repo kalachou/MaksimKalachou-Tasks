@@ -1,14 +1,15 @@
 var path = require('path');
 var webpack = require('webpack');
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
 module.exports = {
     entry: {
         'polyfills': './src/polyfills.ts',
         'app': './src/main.ts'
       },
    output:{
-       path: path.resolve(__dirname, './public'),
-       publicPath: '/public/',
+       path: path.resolve(__dirname, './dist'),
+       publicPath: '/dist/',
        filename: "[name].js"
    },
    resolve: {
@@ -25,14 +26,7 @@ module.exports = {
                   } ,
                    'angular2-template-loader'
                ]
-            },{
-                test: /\.html$/,
-                loader: 'html-loader'
-              }, {
-                  test: /\.css$/,
-                  include: path.resolve(__dirname,'src/app'),
-                  loader: 'raw-loader'
-                }
+            }
        ]
    },
    plugins: [
